@@ -9,17 +9,16 @@ VERSION:	Versoin Number
 -------------------------------------------------------------------*/
 /*  typography */
 /* @import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Roboto:300,400,500,700"); */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
 @font-face {
-  font-family: 'Roboto', sans-serif;
-  src: url("../plugins/fonts/Roboto-Bold.ttf") format("ttf");
+  font-family: 'sans-serif';
+  src: url("../plugins/fonts/SansSerifBldFLFCond.otf") format("ttf");
   font-style: normal;
   font-display: swap;
 }
 
 body {
   line-height: 1.2;
-  font-family: "Roboto", sans-serif;
+  font-family: sans-serif;
   -webkit-font-smoothing: antialiased;
   font-size: 15px;
   color: #4c4c4c;
@@ -30,7 +29,7 @@ p, .paragraph {
   color: #4c4c4c;
   font-size: 15px;
   line-height: 1.8;
-  font-family: "Roboto", sans-serif;
+  font-family: sans-serif;
 }
 
 p-lg, .paragraph-lg {
@@ -91,6 +90,7 @@ h6, .h6 {
   position: relative;
   z-index: 1;
   transition: .2s ease;
+  margin-top: 58px;
 }
 
 .btn:focus {
@@ -105,6 +105,10 @@ h6, .h6 {
 .btn-sm {
   font-size: 15px;
   padding: 10px 30px;
+}
+
+.form-control::placeholder{
+  font-size: 1.3rem;
 }
 
 .btn-xs {
@@ -393,13 +397,30 @@ a:hover {
   border: 0;
   border-radius: 0;
   border-bottom: 1px solid #c7c7c7;
-  height: 60px;
+  height: 64px;
+  font-size: 1.3rem;
 }
 
 .form-control:focus {
   border-color: #41228e;
   outline: 0;
   box-shadow: none !important;
+}
+
+.form-group{
+  font-size: 1.3rem;
+}
+
+.form-group__create{
+  margin-top: 40px;
+}
+
+.form-group a{
+  color: gray;
+}
+
+.form-group a:hover{
+  color: rgb(15, 32, 131);
 }
 
 textarea.form-control {
@@ -422,6 +443,7 @@ textarea.form-control {
 
 /* /card */
 .navigation {
+  font-size: 1.2rem;
   padding: 40px 130px;
   transition: .3s ease;
 }
@@ -445,17 +467,24 @@ textarea.form-control {
 }
 
 .navbar .nav-item .nav-link {
-  font-family: "BwNistaInt-xBd";
+  font-family: sans-serif;
+  font-weight: 540;
+  font-size: 1.3rem;
   text-transform: uppercase;
   padding: 15px;
 }
 
 .navbar .nav-item.active {
   font-weight: bold;
+  color: #fff;
+  border: 1px solid #3e19a5;
+  border-radius: 20px;
+  background-color: #5b35b3;
+  
 }
 
 .navbar-dark .navbar-nav .nav-link {
-  color: #fff;
+  color:#fff;
 }
 
 .hero-area {

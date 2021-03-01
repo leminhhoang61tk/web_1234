@@ -15,34 +15,35 @@ VERSION:	Versoin Number
   font-style: normal;
   font-display: swap;
 }
-img{
-  padding: 30px;
-}
+/* img{
+  padding: 10px;
+}  */
 
 .logo {
-  background-color: white;
+  background-color: rgba(234, 212, 253, 0.5);
   border-radius: 10px;
-  padding: 30px 0;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 body {
   line-height: 1.2;
   font-family: sans-serif;
   -webkit-font-smoothing: antialiased;
-  font-size: 11px;
+  font-size: 12px;
   color: #4c4c4c;
 }
 
 p, .paragraph {
   font-weight: 400;
   color: #4c4c4c;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.8;
   font-family: sans-serif;
 }
 
 p-lg, .paragraph-lg {
-  font-size: 22px;
+  font-size: 20px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -89,17 +90,18 @@ h6, .h6 {
 
 /* Button style */
 .btn {
-  font-size: 22px;
+  font-size: 18px;
   font-family: "Playfair Display", serif;
   text-transform: capitalize;
-  padding: 16px 44px;
+  padding: 16px 20px;
   border-radius: 5px;
   font-weight: 600;
   border: 0;
   position: relative;
   z-index: 1;
   transition: .2s ease;
-  margin-top: 58px;
+  margin-top: 40px;
+  max-width: 200px;
 }
 
 .btn:focus {
@@ -117,7 +119,7 @@ h6, .h6 {
 }
 
 .form-control::placeholder{
-  font-size: 1.3rem;
+  font-size: 1.1rem;
 }
 
 .btn-xs {
@@ -230,7 +232,8 @@ a:hover {
 }
 
 .section-title {
-  margin-bottom: 80px;
+  margin-bottom: 50px;
+  font-size: 2.4rem;
   font-family: "BwNistaInt-xBd";
 }
 
@@ -407,7 +410,7 @@ a:hover {
   border-radius: 0;
   border-bottom: 1px solid #c7c7c7;
   height: 64px;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 
 .form-control:focus {
@@ -417,7 +420,7 @@ a:hover {
 }
 
 .form-group{
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 
 .form-group__create{
@@ -453,8 +456,8 @@ textarea.form-control {
 /* /card */
 .navigation {
   font-size: 1.2rem;
-  padding: 40px 130px;
-  transition: .3s ease;
+  padding: 20px 150px;
+  transition: .35s ease;
 }
 
 .navigation.nav-bg {
@@ -464,7 +467,7 @@ textarea.form-control {
 
 @media (max-width: 991px) {
   .navigation.nav-bg {
-    padding: 15px 20px;
+    padding: 14px 12px;
   }
 }
 
@@ -477,15 +480,13 @@ textarea.form-control {
 
 .navbar .nav-item .nav-link {
   font-family: sans-serif;
-<<<<<<< HEAD
   font-weight: 540;
-  font-size: 1rem;
-=======
+  font-size: 1.4rem;
   font-weight: 3px;
-  font-size: 12px;
->>>>>>> 93d4c5b2f701c711d2779c607584e794a2b28134
+  font-size: 1rem;
   text-transform: uppercase;
   padding: 15px;
+  
 }
 
 .navbar .nav-item.active {
@@ -499,6 +500,7 @@ textarea.form-control {
 
 .navbar-dark .navbar-nav .nav-link {
   color:#fff;
+  
 }
 
 .hero-area {
@@ -956,6 +958,6 @@ blockquote {
 
 /*table - ideas*/
 .table-ideas{
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   margin-top: 100px;
 }

@@ -15,12 +15,21 @@ VERSION:	Versoin Number
   font-style: normal;
   font-display: swap;
 }
+img{
+  padding: 30px;
+}
+
+.logo {
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px 0;
+}
 
 body {
   line-height: 1.2;
   font-family: sans-serif;
   -webkit-font-smoothing: antialiased;
-  font-size: 15px;
+  font-size: 11px;
   color: #4c4c4c;
 }
 
@@ -468,8 +477,13 @@ textarea.form-control {
 
 .navbar .nav-item .nav-link {
   font-family: sans-serif;
+<<<<<<< HEAD
   font-weight: 540;
   font-size: 1rem;
+=======
+  font-weight: 3px;
+  font-size: 12px;
+>>>>>>> 93d4c5b2f701c711d2779c607584e794a2b28134
   text-transform: uppercase;
   padding: 15px;
 }

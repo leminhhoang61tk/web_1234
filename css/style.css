@@ -989,22 +989,17 @@ blockquote {
   width: 90%;
   margin: auto;
   font-size: 1rem;
-}
-
-.table-custom{
   margin-top: 8rem;
   margin-bottom: 8rem;
   text-align: center;
 }
 
-.table-custom-icon{
-  font-size: 1.34rem;
-}
-
 .icon-add:hover{
   color:rgb(33, 19, 167);
+  font-size: 1.4rem;
 }
 
 .icon-delete:hover{
   color: red;
+  font-size: 1.4rem;
 }

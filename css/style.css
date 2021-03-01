@@ -18,7 +18,15 @@ VERSION:	Versoin Number
 /* img{
   padding: 10px;
 }  */
-
+/*Animation*/
+@keyframes fadeIn{
+  from{
+      opacity: 0;
+  }
+  to{
+      opacity: 1;
+  }
+}
 .logo {
   background-color: rgba(234, 212, 253, 0.5);
   border-radius: 10px;
@@ -30,14 +38,14 @@ body {
   line-height: 1.2;
   font-family: sans-serif;
   -webkit-font-smoothing: antialiased;
-  font-size: 12px;
+  font-size: 0.8rem;
   color: #4c4c4c;
 }
 
 p, .paragraph {
   font-weight: 400;
   color: #4c4c4c;
-  font-size: 16px;
+  font-size: 0.8rem;
   line-height: 1.8;
   font-family: sans-serif;
 }
@@ -53,47 +61,47 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1, .h1 {
-  font-size: 80px;
+  font-size: 70px;
 }
 
 @media (max-width: 991px) {
   h1, .h1 {
-    font-size: 65px;
+    font-size: 60px;
   }
 }
 
 h2, .h2 {
-  font-size: 60px;
+  font-size: 46px;
 }
 
 @media (max-width: 991px) {
   h2, .h2 {
-    font-size: 50px;
+    font-size: 42px;
   }
 }
 
 h3, .h3 {
-  font-size: 40px;
+  font-size: 38px;
 }
 
 h4, .h4 {
-  font-size: 22px;
+  font-size: 20px;
 }
 
 h5, .h5 {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 h6, .h6 {
-  font-size: 14px;
+  font-size: 12px;
 }
 
 /* Button style */
 .btn {
-  font-size: 18px;
+  font-size: 16px;
   font-family: "Playfair Display", serif;
   text-transform: capitalize;
-  padding: 16px 20px;
+  padding: 12px 14px;
   border-radius: 5px;
   font-weight: 600;
   border: 0;
@@ -101,7 +109,7 @@ h6, .h6 {
   z-index: 1;
   transition: .2s ease;
   margin-top: 40px;
-  max-width: 200px;
+  max-width: 130px;
 }
 
 .btn:focus {
@@ -114,7 +122,7 @@ h6, .h6 {
 }
 
 .btn-sm {
-  font-size: 15px;
+  font-size: 13px;
   padding: 10px 30px;
 }
 
@@ -124,7 +132,7 @@ h6, .h6 {
 
 .btn-xs {
   padding: 5px 10px;
-  font-size: 15px;
+  font-size: 14px;
 }
 
 .btn-primary {
@@ -233,7 +241,7 @@ a:hover {
 
 .section-title {
   margin-bottom: 50px;
-  font-size: 2.4rem;
+  font-size: 2rem;
   font-family: "BwNistaInt-xBd";
 }
 
@@ -409,8 +417,8 @@ a:hover {
   border: 0;
   border-radius: 0;
   border-bottom: 1px solid #c7c7c7;
-  height: 64px;
-  font-size: 1.2rem;
+  height: 40px;
+  font-size: 14px;
 }
 
 .form-control:focus {
@@ -420,11 +428,19 @@ a:hover {
 }
 
 .form-group{
-  font-size: 1.2rem;
+  /* font-size: 0.8rem; */
+}
+
+.form-group::placeholder{
+  font-size: 14px;
+}
+
+.form-control::placeholder{
+  font-size: 13px;
 }
 
 .form-group__create{
-  margin-top: 40px;
+  margin-top: 26px;
 }
 
 .form-group a{
@@ -436,7 +452,7 @@ a:hover {
 }
 
 textarea.form-control {
-  height: 120px;
+  height: 80px;
 }
 
 /* /form */
@@ -455,7 +471,7 @@ textarea.form-control {
 
 /* /card */
 .navigation {
-  font-size: 1.2rem;
+  font-size: 0.8rem;
   padding: 20px 150px;
   transition: .35s ease;
 }
@@ -478,12 +494,17 @@ textarea.form-control {
   }
 }
 
+@media (max-width: 350px) {
+  .navbar-hidden {
+    display: none;
+  }
+}
+
 .navbar .nav-item .nav-link {
   font-family: sans-serif;
   font-weight: 540;
-  font-size: 1.4rem;
   font-weight: 3px;
-  font-size: 1rem;
+  font-size: 0.8rem;
   text-transform: uppercase;
   padding: 15px;
   
@@ -814,7 +835,7 @@ blockquote {
   background: #eaeaea;
   border-left: 2px solid #41228e;
   font-style: italic;
-  font-size: 22px;
+  font-size: 16px;
 }
 
 .content * {
@@ -823,7 +844,7 @@ blockquote {
 
 .content strong {
   font-family: "Playfair Display", serif;
-  font-size: 22px;
+  font-size: 18px;
   font-weight: normal;
   color: #000;
   display: inherit;
@@ -961,3 +982,89 @@ blockquote {
   font-size: 1.2rem;
   margin-top: 100px;
 }
+
+
+/*navbar user - login*/
+
+.header__navbar-item {
+  margin: 0 20px;
+  position: relative;
+  min-height: 30px;
+
+}
+
+.header__navbar-user{
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+/*khi hover vào tên user -> hiển thị user menu*/
+.header__navbar-user:hover .header__navbar-user-menu{
+  display: block;
+  animation: fadeIn ease-in 0.2s;
+}
+
+.header__navbar-user-menu{
+  position: absolute;
+  z-index: 999999;
+  padding-left: 0;
+  top: calc(100% + 6px);
+  right: 0;
+  width: 160px;
+  background-color:rgb(48, 11, 83); /*màu nền*/
+  border-radius: 2px;
+  list-style: none;
+  box-shadow: 0 1px 2px #1c074d;
+  display: none;
+
+}
+
+.header__navbar-user-menu::after{
+  content: "";
+  border-width: 20px 26px;
+  border-style: solid;
+  border-color: transparent transparent rgb(48, 11, 83) transparent; /*màu của lớp giả*/
+  position: absolute;
+  right: 6px;
+  top: -30px;
+}
+
+/*tạo cầu nối giả -> khi hover vào avata vẫn hiển thị user mennu*/
+/* .header__navbar-user-menu::after{
+  content: "";
+  display: block;
+  position: absolute;
+  top: -8px;
+  right: 0;
+  width: 56%;
+  height: 8px;
+} */
+
+/*Tạo khoảng cách Đăng xuất*/
+.header__navbar-user-item--separate{
+  border-top: 1px solid rgba(248, 245, 245, 0.5);
+}
+
+.header__navbar-user-item a{
+  text-decoration: none;
+  color: white; /*màu chữ*/
+  padding: 10px 16px;
+  display: block;
+  font-size: 1rem;
+}
+
+.header__navbar-user-item a:first-child{
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+}
+
+.header__navbar-user-item a:last-child{
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+.header__navbar-user-item a:hover{
+  background-color: #4b238d; /*màu hover*/
+}
+

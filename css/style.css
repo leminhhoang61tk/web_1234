@@ -972,14 +972,39 @@ blockquote {
 /*# sourceMappingURL=maps/style.css.map */
 
 /*table - ideas*/
-.table-ideas{
+/* .table-ideas{
   font-size: 1.2rem;
   margin-top: 100px;
-}
+} */
 
 
-/*navbar user - logout========================*/
+/*navbar user - logout icon*/
 .nav-link--icon{
   font-size: 1.4rem;
   margin-top: -3px;
+}
+
+/*table ideas*/
+.table-custom{
+  width: 90%;
+  margin: auto;
+  font-size: 1rem;
+}
+
+.table-custom{
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+  text-align: center;
+}
+
+.table-custom-icon{
+  font-size: 1.34rem;
+}
+
+.icon-add:hover{
+  color:rgb(33, 19, 167);
+}
+
+.icon-delete:hover{
+  color: red;
 }

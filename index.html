@@ -29,7 +29,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">  <!--Favicon - chứa icon của trang web-->
   <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
   <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-
 </head>
 
 <body>
@@ -48,27 +47,21 @@
 
     <div class="collapse navbar-collapse text-center topnav" id="navigation">
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="index.html">Trang chủ</a>
-        </li>
-        <li class="nav-item ">
-          <a class="nav-link" href="login.html">Đăng nhập</a>
-        </li>
+
         <li class="nav-item">
-          <a class="nav-link" href="register.html">Đăng ký tài khoản</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="register-ideas.html">Đăng ký ý tưởng</a>
+          <a class="nav-link " href="register-ideas.html">Đăng ký ý tưởng</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="ideas-table.html">Ý tưởng</a>
         </li>
-        <!--TRƯỜNG HỢP ĐĂNG NHẬP-->
         <li class="nav-item">
-          <a class="nav-link" href="#">
-            <i class="fas fa-sign-out-alt nav-link--icon"></i>
-          </a>
+          <a class="nav-link" href="" id="usernameindex"></a>
         </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="" id="logouticon" onclick="logout()"></a>
+        </li>
+
         <!--Dùng dropdown -> không responsive cho moblie
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Tài khoản</a>
@@ -128,20 +121,7 @@
 </section>
 <!-- /hero area -->
 
-<!-- about -->
-<section class="section">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-10 mx-auto text-center">
-        <p class="font-secondary paragraph-lg text-dark">
-          Hãy tạo tài khoản và chia sẻ ý tưởng của bạn, góp phần đa dạng hóa ngân hàng ý tưởng sáng tạo của Thanh niên Việt Nam
-          "Đoàn viên, thanh niên đề xuất 5 triệu ý tưởng, sáng kiến"
-        </p>
-        <a href="register.html" class="btn btn-transparent" style="font-size: 1.2rem;">Tạo tài khoản ngay</a>
-      </div>
-    </div>
-  </div>
-</section>
+
 <!-- /about -->
 
 <!-- top số lượng ý tưởng -->
@@ -406,6 +386,11 @@
 
 <!-- Main Script -->
 <script src="js/script.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script>
+<script src="js/index.js"></script>
 
 </body>
 </html>

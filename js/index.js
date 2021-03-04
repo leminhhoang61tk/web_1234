@@ -113,7 +113,7 @@ $(document).ready(function() {
      });
   });
   $( '.table-responsive-stack' ).each(function() {
-  var thCount = $(this).find("th").length; 
+    var thCount = $(this).find("th").length; 
     var rowGrow = 100 / thCount + '%';
     //console.log(rowGrow);
     $(this).find("th, td").css('flex-basis', rowGrow);   
@@ -138,12 +138,7 @@ flexTable();
 window.onresize = function(event) {
    flexTable();
 };
-  
-  
-  
-  
 
- 
 // document ready  
 });
 

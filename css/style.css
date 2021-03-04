@@ -1056,10 +1056,6 @@ blockquote {
 }
 
 /*IDEAS TOP*/
-.button-ideas-top{
-  background-color: indigo;
-  width: 16.8rem;
-}
 
 /*reponsive*/
 .table-responsive-stack tr {
@@ -1092,20 +1088,29 @@ blockquote {
     flex-direction: column;
     border-bottom: 3px solid #ccc;
     display:block;
+    margin-bottom: 40px;
+    text-align: left;
     
   }
   /* IE9 FIX  */
   .table-responsive-stack td {
     float: left\9;
     width:100%;
+    
   }
 }
 /*--*/
+.button-select{
+  font-size: 1.2rem;
+  width: fit-content;
+}
+
 .table-ideas-top{
   font-size: 1rem;
   text-align: center;
   width: 100%;
+  text-align: left;
 }
 
-.
+
 

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <!--THỐNG KÊ Ý TƯỞNG-->
+  <title>TMOT | Ideas</title>
+  
+  <meta charset="utf-8">
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <!--Font Awaresome-->
+  <link rel="stylesheet" href="plugins/fonts/fontawesome-free-5.15.2-web/css/all.min.css">
+
+
+  <!-- ** Plugins Needed for the Project ** -->
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+  <!-- slick slider -->
+  <link rel="stylesheet" href="plugins/slick/slick.css">
+  <!-- themefy-icon -->
+  <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
+
+  <!-- Main Stylesheet -->
+  <link href="css/style.css" rel="stylesheet">
+  
+  <!--Favicon-->
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+  
+
+<header class="navigation fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand font-tertiary h3 logo" href="index.html">
+      <!-- <img src="images/logo.png" alt="Myself"> -->
+      <img src="images/logo.png" alt="tdtu" style="max-width: 200px;">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
+      aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse text-center" id="navigation">
+      <ul class="navbar-nav ml-auto">
+
+        <li class="nav-item">
+          <a class="nav-link" href="register-ideas.html">Đăng ký ý tưởng</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="ideas-table.html">Ý tưởng</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="ideas-detail.html">Chi tiết ý tưởng</a>
+        </li>
+        <li class="nav-item active">
+            <a class="nav-link" href="ideas-top.html">Thống kê ý tưởng</a>
+          </li>
+        <li class="nav-item">
+          <a class="nav-link" href="" id="usernameindex"></a>
+        </li>
+        <!--TRƯỜNG HỢP ĐĂNG NHẬP-->
+          <li class="nav-item">
+              <a class="nav-link" href="" id="logouticon" onclick="logout()"></a>
+          </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<!-- page title -->
+<section class="page-title bg-primary position-relative">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h1 class="text-white font-tertiary"><strong>DANH SÁCH Ý TƯỞNG</strong></h1>
+      </div>
+    </div>
+  </div>
+  <!-- background shapes -->
+  <img src="images/illustrations/page-title.png" alt="illustrations" class="bg-shape-1 w-100">
+  <img src="images/illustrations/leaf-pink-round.png" alt="illustrations" class="bg-shape-2">
+  <img src="images/illustrations/dots-cyan.png" alt="illustrations" class="bg-shape-3">
+  <img src="images/illustrations/leaf-orange.png" alt="illustrations" class="bg-shape-4">
+  <img src="images/illustrations/leaf-yellow.png" alt="illustrations" class="bg-shape-5">
+  <img src="images/illustrations/dots-group-cyan.png" alt="illustrations" class="bg-shape-6">
+  <img src="images/illustrations/leaf-cyan-lg.png" alt="illustrations" class="bg-shape-7">
+</section>
+<!-- /page title -->
+
+<!-- select khoa -->
+<section class="section">
+  <h2 style="text-align: center;">Khoa Công nghệ thông tin</h2>
+</section>
+<!-- /select khoa -->
+
+<!--THỐNG KÊ-->
+<div class="container">
+  <!--select button-->
+  <select class="form-select form-select-lg mb-3 btn btn-sm btn-primary button-select" aria-label=".form-select-lg example">
+    <option selected>--Select Khoa---</option>
+    <option value="">Công nghệ thông tin</option>
+    <option value="">Khoa học xã hội và nhân văn</option>
+    <option value="">Khoa học ứng dụng</option>
+    <option value="">Khoa học thể thao</option>
+    <option value="">Điện - Điện tử</option>
+    <option value="">Toán - Thống kê</option>
+    <option value="">Mỹ thuật công nghiệp</option>
+    <option value="">Dược</option>
+    <option value="">Luật</option>
+    <option value="">Ngoại ngữ</option>
+    <option value="">Quản trị kinh doanh</option>
+    <option value="">Tài chính ngân hàng</option>
+    <option value="">Môi trường và bảo hộ lao động</option>
+    <option value="">Lao động công đoàn</option>
+    <option value="">Kế toán</option>
+    <option value="">Kỹ thuật công trình</option>
+    <option value="">Giáo dục quốc tế</option>
+  </select>  
+  <!--/ select button-->
+
+  <!--bảng-->
+  <table class="table table-bordered table-striped table-responsive-stack table-ideas-top" id="tableOne">
+    <thead class="thead-light">
+      <tr>
+        <th>TÁC GIẢ</th>
+        <th>LỚP</th>
+        <th>Ý TƯỞNG</th>
+        <th>MÔ TẢ</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Ngô Thanh Phú</td>
+        <td>18050201</td>
+        <td>Nghiên cứu quy trình lọc nước thải tự động thông minh</td>
+        <td>Nghiên cứu quy trình lọc nước thải tự động thông minh</td>
+      </tr>
+      <tr>
+        <td>Nguyễn Thị Ngọc Hân</td>
+        <td>17050201</td>
+        <td>Nghiên cứu quy trình lọc nước thải tự động thông minh</td>
+        <td>Nghiên cứu quy trình lọc nước thải tự động thông minh</td>
+      </tr>
+      <tr>
+        <td>Trần Trọng Huy</td>
+        <td>16050201</td>
+        <td>Nghiên cứu quy trình lọc nước thải tự động thông minh</td>
+        <td>Nghiên cứu quy trình lọc nước thải tự động thông minh</td>
+      </tr>
+      <tr>
+        <td>Võ Hoàng Anh</td>
+        <td>19050201</td>
+        <td>Nghiên cứu quy trình lọc nước thải tự động thông minh</td>
+        <td>Nghiên cứu quy trình lọc nước thải tự động thông minh</td>
+      </tr>
+    </tbody>
+  </table>
+  <!--/bảng-->
+</div>
+<!-- /THỐNG KÊ-->
+
+<!-- footer -->
+<footer class="bg-dark footer-section">
+  <div class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h5 class="text-light">Email</h5>
+          <p class="text-white paragraph-lg font-secondary">banhanhchinhtmot@gmail.com</p>
+        </div>
+        <div class="col-md-4">
+          <h5 class="text-light">Phone</h5>
+          <p class="text-white paragraph-lg font-secondary">+84 888745255</p>
+        </div>
+        <div class="col-md-4">
+          <h5 class="text-light">Address</h5>
+          <p class="text-white paragraph-lg font-secondary">Số 19, Nguyễn Hữu Thọ, Phường Tân Phong, Quận 7</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="border-top text-center border-dark py-5">
+    <p class="mb-0 text-light">Copyright ©<script>
+        var CurrentYear = new Date().getFullYear()
+        document.write(CurrentYear)
+      </script><a href="https://www.facebook.com/tdtu.tmot"> hnm-ntp-TMOT</a></p>
+  </div>
+</footer>
+<!--/footer-->
+
+<!-- jQuery -->
+<script src="plugins/jQuery/jquery.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="plugins/bootstrap/bootstrap.min.js"></script>
+<!-- slick slider -->
+<script src="plugins/slick/slick.min.js"></script>
+<!-- filter -->
+<script src="plugins/shuffle/shuffle.min.js"></script>
+
+<!-- Main Script -->
+<script src="js/script.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>

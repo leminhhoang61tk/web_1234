@@ -99,29 +99,47 @@
 <!-- /select khoa -->
 
 <!--THỐNG KÊ-->
+
 <div class="container">
-  <!--select button-->
-  <select class="form-select form-select-lg mb-3 btn btn-sm btn-primary button-select" aria-label=".form-select-lg example">
-    <option selected>--Select Khoa---</option>
-    <option value="">Công nghệ thông tin</option>
-    <option value="">Khoa học xã hội và nhân văn</option>
-    <option value="">Khoa học ứng dụng</option>
-    <option value="">Khoa học thể thao</option>
-    <option value="">Điện - Điện tử</option>
-    <option value="">Toán - Thống kê</option>
-    <option value="">Mỹ thuật công nghiệp</option>
-    <option value="">Dược</option>
-    <option value="">Luật</option>
-    <option value="">Ngoại ngữ</option>
-    <option value="">Quản trị kinh doanh</option>
-    <option value="">Tài chính ngân hàng</option>
-    <option value="">Môi trường và bảo hộ lao động</option>
-    <option value="">Lao động công đoàn</option>
-    <option value="">Kế toán</option>
-    <option value="">Kỹ thuật công trình</option>
-    <option value="">Giáo dục quốc tế</option>
-  </select>  
-  <!--/ select button-->
+  <!--chia theo tỉ lệ-->
+  <div class="row">
+    <div class="col-6 col-md-4">
+      <!--select button-->
+      <select class="form-select form-select-lg mb-3 btn btn-sm btn-primary button-select" aria-label=".form-select-lg example">
+        <option selected>--Select Khoa---</option>
+        <option value="">Công nghệ thông tin</option>
+        <option value="">Khoa học xã hội và nhân văn</option>
+        <option value="">Khoa học ứng dụng</option>
+        <option value="">Khoa học thể thao</option>
+        <option value="">Điện - Điện tử</option>
+        <option value="">Toán - Thống kê</option>
+        <option value="">Mỹ thuật công nghiệp</option>
+        <option value="">Dược</option>
+        <option value="">Luật</option>
+        <option value="">Ngoại ngữ</option>
+        <option value="">Quản trị kinh doanh</option>
+        <option value="">Tài chính ngân hàng</option>
+        <option value="">Môi trường và bảo hộ lao động</option>
+        <option value="">Lao động công đoàn</option>
+        <option value="">Kế toán</option>
+        <option value="">Kỹ thuật công trình</option>
+        <option value="">Giáo dục quốc tế</option>
+      </select>  
+      <!--/ select button-->
+    </div>
+
+    <!--class chia cột - không xóa class này-->
+    <div class="col-6 col-md-4">
+    </div>
+    
+    <div class="col-6 col-md-4">
+      <form class="example" action="action_page.php">
+        <input type="text" placeholder="Search.." name="search">
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </form>
+    </div>
+  </div>
+
 
   <!--bảng-->
   <table class="table table-bordered table-striped table-responsive-stack table-ideas-top" id="tableOne">

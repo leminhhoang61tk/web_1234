@@ -1109,8 +1109,46 @@ blockquote {
   font-size: 1rem;
   text-align: center;
   width: 100%;
-  text-align: left;
+}
+/*button*/
+* {
+  box-sizing: border-box;
 }
 
+/* Style the search field */
+form.example input[type=text] {
+  padding: 10px 30px;
+  margin: 30px 0 16px;
+  font-size: 1rem;
+  border: 1px solid rgb(71, 39, 146);
+  float: left;
+  width: 80%;
+  background: white;
+  border-radius: 4px;
+}
 
+/* Style the submit button */
+form.example button {
+  float: left;
+  padding: 10px 30px;
+  margin: 30px 0 16px;
+  width: 20%;
+  background: #3623a1;
+  color: white;
+  font-size: 1rem;
+  border: 1px solid rgb(64, 46, 163);
+  border-radius: 4px;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+}
 
+form.example button:hover {
+  opacity: 0.8;
+}
+
+/* Clear floats */
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}

@@ -1096,12 +1096,23 @@ blockquote {
   .table-responsive-stack td {
     float: left\9;
     width:100%;
+  }
+
+  form.example{
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
     
+  }
+  form.example input[type=text]{
+    text-align: center;
+    min-width: 240px;
   }
 }
 /*--*/
 .button-select{
-  font-size: 1.2rem;
+  font-size: 1rem;
   width: fit-content;
 }
 
@@ -1111,8 +1122,8 @@ blockquote {
   width: 100%;
 }
 /*button*/
-* {
-  box-sizing: border-box;
+form.example{
+  display: inline-flex;
 }
 
 /* Style the search field */

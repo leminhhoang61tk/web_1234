@@ -1112,6 +1112,12 @@ blockquote {
     text-align: center;
     min-width: 240px;
   }
+  .kiniem90{
+    max-width: 21rem;
+    max-height: 9rem;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
 }
 /*--*/
 .button-select{
@@ -1169,4 +1175,8 @@ form.example::after {
 
 .kiniem90{
   background-image: url(../images/90/firework.gif);
+  height: 30rem;
+  width: 70rem;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }

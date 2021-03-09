@@ -1166,3 +1166,7 @@ form.example::after {
   clear: both;
   display: table;
 }
+
+.kiniem90{
+  background-image: url(../images/90/firework.gif);
+}

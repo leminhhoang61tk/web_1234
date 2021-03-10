@@ -1180,3 +1180,13 @@ form.example::after {
   margin-top: 0px;
   margin-bottom: 0px;
 }
+
+#musicHolder {
+  background-color: white;
+  /* padding: 2em;
+  width: 50%; */
+}
+
+#slogan{
+  display: none;
+}

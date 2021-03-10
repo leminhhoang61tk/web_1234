@@ -155,3 +155,11 @@
 
 
 })(jQuery);
+
+//Mouseover Slogan
+$(function(){
+    $('#musicHolder').hover(
+        function() { $("audio")[0].play();},
+        function() { $("audio")[0].pause();}
+        )
+});

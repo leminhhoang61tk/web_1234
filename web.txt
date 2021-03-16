@@ -1,0 +1,6 @@
+- Chưa điền đủ thông tin nhưng bấm submit vẫn chuyển trang.
+- Logo dính với tên trường, cần tách ra. (logo Đoàn với Hội hơi to,của Đội hơi nhỏ)
+- Logo tên thanh tab nhỏ
+- Hiện số lượng ý tưởng của khoa nộp về (của các top)
+- Lỗi vào trang web bằng iphone (ghi chú các bạn copy link vào bằng safari)
+- 

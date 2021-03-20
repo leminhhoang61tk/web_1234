@@ -1,254 +1,338 @@
 <!DOCTYPE html>
 <html lang="zxx">
+  <head>
+    <!--REGISTER IDEAS - Ý TƯỞNG-->
+    <title>TMOT | Ideas Detail</title>
 
-<head>
-  <!--REGISTER IDEAS - Ý TƯỞNG-->
-  <title>TMOT | Ideas Detail</title>
-  
-  <meta charset="utf-8">
-  <!-- mobile responsive meta -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  
-  <!--Font Awaresome-->
-  <link rel="stylesheet" href="plugins/fonts/fontawesome-free-5.15.2-web/css/all.min.css">
+    <meta charset="utf-8" />
+    <!-- mobile responsive meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
 
+    <!--Font Awaresome-->
+    <link
+      rel="stylesheet"
+      href="plugins/fonts/fontawesome-free-5.15.2-web/css/all.min.css"
+    />
 
-  <!-- ** Plugins Needed for the Project ** -->
-  <!-- Bootstrap -->
-  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
-  <!-- slick slider -->
-  <link rel="stylesheet" href="plugins/slick/slick.css">
-  <!-- themefy-icon -->
-  <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
+    <!-- ** Plugins Needed for the Project ** -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css" />
+    <!-- slick slider -->
+    <link rel="stylesheet" href="plugins/slick/slick.css" />
+    <!-- themefy-icon -->
+    <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css" />
 
-  <!-- Main Stylesheet -->
-  <link href="css/style.css" rel="stylesheet">
-  
-  <!--Favicon-->
-  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <!-- Main Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
 
-</head>
+    <!--Favicon-->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+  </head>
 
-<body>
-  
+  <body>
+    <!--hoàng6674-->
+    <header class="navigation fixed-top">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand font-tertiary h3 logo" href="index.html">
+          <!-- <img src="images/logo.png" alt="Myself"> -->
+          <img src="images/logo.png" alt="tdtu" style="max-width: 200px" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navigation"
+          aria-controls="navigation"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-<header class="navigation fixed-top">
-  <nav class="navbar navbar-expand-lg navbar-dark">
-    <a class="navbar-brand font-tertiary h3 logo" href="index.html">
-      <!-- <img src="images/logo.png" alt="Myself"> -->
-      <img src="images/logo.png" alt="tdtu" style="max-width: 200px;">
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
-      aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+        <div class="collapse navbar-collapse text-center" id="navigation">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="register-ideas.html">Đăng ký ý tưởng</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ideas-table.html">Ý tưởng</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="ideas-detail.html">Chi tiết ý tưởng</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ideas-list.html">Thống kê ý tưởng</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="" id="usernameindex"></a>
+            </li>
+            <!--TRƯỜNG HỢP ĐĂNG NHẬP-->
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href=""
+                id="logouticon"
+                onclick="logout()"
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
-    <div class="collapse navbar-collapse text-center" id="navigation">
-      <ul class="navbar-nav ml-auto">
-
-        <li class="nav-item">
-          <a class="nav-link" href="register-ideas.html">Đăng ký ý tưởng</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="ideas-table.html">Ý tưởng</a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link " href="ideas-detail.html">Chi tiết ý tưởng</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link " href="ideas-list.html">Thống kê ý tưởng</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="" id="usernameindex"></a>
-        </li>
-        <!--TRƯỜNG HỢP ĐĂNG NHẬP-->
-          <li class="nav-item">
-              <a class="nav-link" href="" id="logouticon" onclick="logout()"></a>
-          </li>
-      </ul>
-    </div>
-  </nav>
-</header>
-
-<!-- page title -->
-<section class="page-title bg-primary position-relative">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 text-center">
-        <h1 class="text-white font-tertiary"><strong>CHI TIẾT Ý TƯỞNG</strong></h1>
+    <!-- page title -->
+    <section class="page-title bg-primary position-relative">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h1 class="text-white font-tertiary">
+              <strong>CHI TIẾT Ý TƯỞNG</strong>
+            </h1>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-  <!-- background shapes -->
-  <img src="images/illustrations/page-title.png" alt="illustrations" class="bg-shape-1 w-100">
-  <img src="images/illustrations/leaf-pink-round.png" alt="illustrations" class="bg-shape-2">
-  <img src="images/illustrations/dots-cyan.png" alt="illustrations" class="bg-shape-3">
-  <img src="images/illustrations/leaf-orange.png" alt="illustrations" class="bg-shape-4">
-  <img src="images/illustrations/leaf-yellow.png" alt="illustrations" class="bg-shape-5">
-  <img src="images/illustrations/dots-group-cyan.png" alt="illustrations" class="bg-shape-6">
-  <img src="images/illustrations/leaf-cyan-lg.png" alt="illustrations" class="bg-shape-7">
-</section>
-<!-- /page title -->
+      <!-- background shapes -->
+      <img
+        src="images/illustrations/page-title.png"
+        alt="illustrations"
+        class="bg-shape-1 w-100"
+      />
+      <img
+        src="images/illustrations/leaf-pink-round.png"
+        alt="illustrations"
+        class="bg-shape-2"
+      />
+      <img
+        src="images/illustrations/dots-cyan.png"
+        alt="illustrations"
+        class="bg-shape-3"
+      />
+      <img
+        src="images/illustrations/leaf-orange.png"
+        alt="illustrations"
+        class="bg-shape-4"
+      />
+      <img
+        src="images/illustrations/leaf-yellow.png"
+        alt="illustrations"
+        class="bg-shape-5"
+      />
+      <img
+        src="images/illustrations/dots-group-cyan.png"
+        alt="illustrations"
+        class="bg-shape-6"
+      />
+      <img
+        src="images/illustrations/leaf-cyan-lg.png"
+        alt="illustrations"
+        class="bg-shape-7"
+      />
+    </section>
+    <!-- /page title -->
 
-<!--IDEAS DETAIL-->
-<div class="container">
-  <div class="row">
-    <div class="col-12">
-		  <table class="table table-image">
-		    <thead>
-		      <tr>
-		        <th scope="col" colspan="2"></th>
-		        <th scope="col"></th>
-		      </tr>
-		    </thead>
-		    <tbody>
-		      <tr>
-            <!--Phần chứa hình ảnh ý tưởng-->
-		        <td class="w-25">
-			        <img src="images/ideas-detail/ideas-detail.gif" class="img-fluid img-thumbnail" alt="Chi tiết ý tưởng">
-		        </td>
-            <!--/end phần chứa hình ảnh ý tưởng-->
-
-            <!--Bảng thông tin chi tiết ý tưởng-->
-		        <td rowspan="2">
-              <div class="container">
-                <div class="table-responsive">
-                    <table class="table table-bordered table-sm table-ideas-detail">
-                      <thead>
-                        <tr>
-                          <th>Tên ý tưởng</th>
-                          <td>Nghiên cứu hệ thống xử lý nước thải</td>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <th>Tác giả</th>
-                          <td>Nguyễn Hoàng Anh</td>
-                        </tr>
-                        <tr>
-                          <th>Mã</th>
-                          <td>A18356F4G</td>
-                        </tr>
-                        <tr>
-                          <th>Ngày</th>
-                          <td>03/03/2021</td>
-                        </tr>
-                        <tr>
-                          <th>Mô tả</th>
-                          <td>
-                            Hệ thống xử lý nước thải tự động và hệ thống thoát nước thông minh, xử lý tình trạng rác thải quá tải tại các khu đô thị
-                            Hệ thống xử lý nước thải hiện đại đầu tiên được xây dựng vào giữa thế kỷ XIX như một hành động nhằm đáp ứng đối với điều kiện vệ sinh ngày càng trầm trọng gây ra bởi công nghiệp hóa và đô thị hóa.
-                            Do nguồn cung cấp nước bị ô nhiễm, dịch bệnh tả xảy ra vào năm 1832, năm 1849 và năm 1855 tại London, giết chết hàng chục ngàn người.
-                            Những điều này kết hợp với 'vụ hôi lớn"(Big Stink)[2] năm 1858 tức là khi mùi hôi của chất thải con người chưa được xử lý ở sông Thames trở nên không thể kiểm soát và bài báo cáo về cải cách vệ sinh của uỷ viên hoàng gia Edwin Chadwick
-                            đã dẫn đến việc Ủy ban công trình đô thị bổ nhiệm Joseph Bazalgette.....
-                          </td>
-                        </tr>
-                        
-                      </tbody>
-                      
-                    </table>
-                    <!--button edit + delete-->
-                    <div style="text-align: right;">
-                      <ul class="list-inline m-0">
-                        <li class="list-inline-item">
-                            <button class="btn btn-success btn-sm btn-primary rounded-0" type="button" data-toggle="tooltip" data-placement="top" title="Edit"><i class="fa fa-edit"></i></button>
-                        </li>
-                        <li class="list-inline-item">
-                            <button class="btn btn-danger btn-sm rounded-0" type="button" data-toggle="tooltip" data-placement="top" title="Delete"><i class="fa fa-trash"></i></button>
-                        </li>
-                      </ul>
-                    </div>
-
-                </div>
-              </div>
-            </td>
-      
-            <!--/end Bảng thông tin chi tiết ý tưởng-->
-		      </tr>
-
-		      <tr>
-            <td class="w-25">
-              <!--Bảng thông tin tác giả-->
-              <!--muốn xóa hover thì bỏ class table-hover-->
-              <table class="table table-hover table-author">
-                <thead class="">
-                  <tr>
-                    <th colspan="2">Thông tin tác giả</th>
-                    <th></th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td colspan="2">Nguyễn Hoàng Anh</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td colspan="2">Ngày sinh: 25/05/2000</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td colspan="2">Đơn vị: Đoàn trường Đại học Tôn Đức Thắng</td>
-                    <td></td>
-                  </tr>
-                </tbody>
-              </table>
-              <!--/end Bảng thông tin tác giả-->
-            </td>
-		      </tr>
-
-		    </tbody>
-		  </table>   
-    </div>
-  </div>
-</div>
-<!--/IDEAS DETAIL-->
-
-<!-- footer -->
-<footer class="bg-dark footer-section">
-  <div class="section">
+    <!--IDEAS DETAIL-->
     <div class="container">
       <div class="row">
-        <div class="col-md-4">
-          <h5 class="text-light">Email</h5>
-          <p class="text-white paragraph-lg font-secondary">banhanhchinhtmot@gmail.com</p>
-        </div>
-        <div class="col-md-4">
-          <h5 class="text-light">Phone</h5>
-          <p class="text-white paragraph-lg font-secondary">+84 888745255</p>
-        </div>
-        <div class="col-md-4">
-          <h5 class="text-light">Address</h5>
-          <p class="text-white paragraph-lg font-secondary">Số 19, Nguyễn Hữu Thọ, Phường Tân Phong, Quận 7</p>
+        <div class="col-12">
+          <table class="table table-image">
+            <thead>
+              <tr>
+                <th scope="col" colspan="2"></th>
+                <th scope="col"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <!--Phần chứa hình ảnh ý tưởng-->
+                <td class="w-25">
+                  <img
+                    src="images/ideas-detail/ideas-detail.gif"
+                    class="img-fluid img-thumbnail"
+                    alt="Chi tiết ý tưởng"
+                  />
+                </td>
+                <!--/end phần chứa hình ảnh ý tưởng-->
+
+                <!--Bảng thông tin chi tiết ý tưởng-->
+                <td rowspan="2">
+                  <div class="container">
+                    <div class="table-responsive">
+                      <table
+                        class="table table-bordered table-sm table-ideas-detail"
+                      >
+                        <thead>
+                          <tr>
+                            <th>Tên ý tưởng</th>
+                            <td>Nghiên cứu hệ thống xử lý nước thải</td>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th>Tác giả</th>
+                            <td>Nguyễn Hoàng Anh</td>
+                          </tr>
+                          <tr>
+                            <th>Mã</th>
+                            <td>A18356F4G</td>
+                          </tr>
+                          <tr>
+                            <th>Ngày</th>
+                            <td>03/03/2021</td>
+                          </tr>
+                          <tr>
+                            <th>Mô tả</th>
+                            <td>
+                              Hệ thống xử lý nước thải tự động và hệ thống thoát
+                              nước thông minh, xử lý tình trạng rác thải quá tải
+                              tại các khu đô thị Hệ thống xử lý nước thải hiện
+                              đại đầu tiên được xây dựng vào giữa thế kỷ XIX như
+                              một hành động nhằm đáp ứng đối với điều kiện vệ
+                              sinh ngày càng trầm trọng gây ra bởi công nghiệp
+                              hóa và đô thị hóa. Do nguồn cung cấp nước bị ô
+                              nhiễm, dịch bệnh tả xảy ra vào năm 1832, năm 1849
+                              và năm 1855 tại London, giết chết hàng chục ngàn
+                              người. Những điều này kết hợp với 'vụ hôi lớn"(Big
+                              Stink)[2] năm 1858 tức là khi mùi hôi của chất
+                              thải con người chưa được xử lý ở sông Thames trở
+                              nên không thể kiểm soát và bài báo cáo về cải cách
+                              vệ sinh của uỷ viên hoàng gia Edwin Chadwick đã
+                              dẫn đến việc Ủy ban công trình đô thị bổ nhiệm
+                              Joseph Bazalgette.....
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <!--button edit + delete-->
+                      <div style="text-align: right">
+                        <ul class="list-inline m-0">
+                          <li class="list-inline-item">
+                            <button
+                              class="btn btn-success btn-sm btn-primary rounded-0"
+                              type="button"
+                              data-toggle="tooltip"
+                              data-placement="top"
+                              title="Edit"
+                            >
+                              <i class="fa fa-edit"></i>
+                            </button>
+                          </li>
+                          <li class="list-inline-item">
+                            <button
+                              class="btn btn-danger btn-sm rounded-0"
+                              type="button"
+                              data-toggle="tooltip"
+                              data-placement="top"
+                              title="Delete"
+                            >
+                              <i class="fa fa-trash"></i>
+                            </button>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+
+                <!--/end Bảng thông tin chi tiết ý tưởng-->
+              </tr>
+
+              <tr>
+                <td class="w-25">
+                  <!--Bảng thông tin tác giả-->
+                  <!--muốn xóa hover thì bỏ class table-hover-->
+                  <table class="table table-hover table-author">
+                    <thead class="">
+                      <tr>
+                        <th colspan="2">Thông tin tác giả</th>
+                        <th></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td colspan="2">Nguyễn Hoàng Anh</td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td colspan="2">Ngày sinh: 25/05/2000</td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td colspan="2">
+                          Đơn vị: Đoàn trường Đại học Tôn Đức Thắng
+                        </td>
+                        <td></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <!--/end Bảng thông tin tác giả-->
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </div>
-  </div>
-  <div class="border-top text-center border-dark py-5">
-    <p class="mb-0 text-light">Copyright ©<script>
-        var CurrentYear = new Date().getFullYear()
-        document.write(CurrentYear)
-      </script><a href="https://www.facebook.com/tdtu.tmot"> hnm-ntp-TMOT</a></p>
-  </div>
-</footer>
-<!--/footer-->
+    <!--/IDEAS DETAIL-->
 
-<!-- jQuery -->
-<script src="plugins/jQuery/jquery.min.js"></script>
-<!-- Bootstrap JS -->
-<script src="plugins/bootstrap/bootstrap.min.js"></script>
-<!-- slick slider -->
-<script src="plugins/slick/slick.min.js"></script>
-<!-- filter -->
-<script src="plugins/shuffle/shuffle.min.js"></script>
+    <!-- footer -->
+    <footer class="bg-dark footer-section">
+      <div class="section">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <h5 class="text-light">Email</h5>
+              <p class="text-white paragraph-lg font-secondary">
+                banhanhchinhtmot@gmail.com
+              </p>
+            </div>
+            <div class="col-md-4">
+              <h5 class="text-light">Phone</h5>
+              <p class="text-white paragraph-lg font-secondary">
+                +84 888745255
+              </p>
+            </div>
+            <div class="col-md-4">
+              <h5 class="text-light">Address</h5>
+              <p class="text-white paragraph-lg font-secondary">
+                Số 19, Nguyễn Hữu Thọ, Phường Tân Phong, Quận 7
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="border-top text-center border-dark py-5">
+        <p class="mb-0 text-light">
+          Copyright ©
+          <script>
+            var CurrentYear = new Date().getFullYear();
+            document.write(CurrentYear);
+          </script>
+          <a href="https://www.facebook.com/tdtu.tmot"> hnm-ntp-TMOT</a>
+        </p>
+      </div>
+    </footer>
+    <!--/footer-->
 
-<!-- Main Script -->
-<script src="js/script.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-auth.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script>
-<script src="js/index.js"></script>
-</body>
+    <!-- jQuery -->
+    <script src="plugins/jQuery/jquery.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="plugins/bootstrap/bootstrap.min.js"></script>
+    <!-- slick slider -->
+    <script src="plugins/slick/slick.min.js"></script>
+    <!-- filter -->
+    <script src="plugins/shuffle/shuffle.min.js"></script>
+
+    <!-- Main Script -->
+    <script src="js/script.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script>
+    <script src="js/index.js"></script>
+  </body>
 </html>

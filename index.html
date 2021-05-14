@@ -1,421 +1,472 @@
 <!DOCTYPE html>
 <html lang="zxx">
+  <head>
+    <!--INDEX - TRANG CHỦ-->
+    <title>App Store | Trang chủ</title>
 
-<head>
-  <!--INDEX - TRANG CHỦ-->
-  <title>TMOT | Home</title>
+    <meta charset="utf-8" />
+    <!-- mobile responsive meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
 
-  <meta charset="utf-8">
-  <!-- mobile responsive meta -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  
-  <!--Font Awaresome-->
-  <link rel="stylesheet" href="plugins/fonts/fontawesome-free-5.15.2-web/css/all.min.css">
+    <!--Font Awaresome-->
+    <link
+      rel="stylesheet"
+      href="plugins/fonts/fontawesome-free-5.15.2-web/css/all.min.css"
+    />
 
-  <!-- ** Plugins Needed for the Project ** -->
-  <!-- Bootstrap -->
-  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
-  <!-- slick slider -->
-  <link rel="stylesheet" href="plugins/slick/slick.css">
-  <!-- themefy-icon -->
-  <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
+    <!-- ** Plugins Needed for the Project ** -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css" />
+    <!-- slick slider -->
+    <link rel="stylesheet" href="plugins/slick/slick.css" />
+    <!-- themefy-icon -->
+    <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css" />
 
-  <!-- Main Stylesheet -->
-  <link href="css/style.css" rel="stylesheet">
-  
-  <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">  <!--Favicon - chứa icon của trang web-->
-  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-</head>
+    <!-- Main Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
 
-<body>
-  
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!--Favicon - chứa icon của trang web-->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+  </head>
 
-<header class="navigation fixed-top">
-  <nav class="navbar navbar-expand-lg navbar-dark">
-    <a class="navbar-brand font-tertiary h3 logo" href="index.html">
-      <!-- <img src="images/logo.png" alt="Myself"> -->
-      <img src="images/logo.png" alt="tdtu" style="max-width: 200px;">
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
-      aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+  <body>
+    <header class="navigation fixed-top">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand font-tertiary h3 logo" href="index.html">
+          <!-- <img src="images/logo.png" alt="Myself"> -->
+          <img src="images/logo.png" alt="tdtu" style="max-width: 5px" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navigation"
+          aria-controls="navigation"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <div class="collapse navbar-collapse text-center topnav" id="navigation">
-      <ul class="navbar-nav ml-auto">
+        <div
+          class="collapse navbar-collapse text-center topnav"
+          id="navigation"
+        >
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="register-ideas.html">Đăng ký</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">Đăng Nhập</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">Chi tiết ứng dụng</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">Thống kê ứng dụng</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="" id="usernameindex"></a>
+            </li>
 
-        <li class="nav-item">
-          <a class="nav-link " href="register-ideas.html">Đăng ký ý tưởng</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="ideas-table.html">Ý tưởng</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="" id="usernameindex"></a>
-        </li>
+            <!--Dùng dropdown -> không responsive cho moblie -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbardrop"
+                data-toggle="dropdown"
+                >Tài khoản</a
+              >
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Ứng dụng của tôi</a>
+                <a class="dropdown-item" href="#">Đăng xuất</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
-        <li class="nav-item">
-          <a class="nav-link" href="" id="logouticon" onclick="logout()"></a>
-        </li>
+    <!-- hero area -->
+    <section class="hero-area bg-primary" id="parallax">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-11 mx-auto">
+            <h1 class="text-white font-tertiary">
+              <strong>APP STORE</strong>
+            </h1>
+          </div>
+        </div>
+      </div>
+      <div class="layer-bg w-100">
+        <img
+          class="img-fluid w-100"
+          src="images/illustrations/leaf-bg.png"
+          alt="bg-shape"
+        />
+      </div>
+      <div class="layer" id="l2">
+        <img src="images/illustrations/dots-cyan.png" alt="bg-shape" />
+      </div>
+      <div class="layer" id="l3">
+        <img src="images/illustrations/leaf-orange.png" alt="bg-shape" />
+      </div>
+      <div class="layer" id="l4">
+        <img src="images/illustrations/dots-orange.png" alt="bg-shape" />
+      </div>
+      <div class="layer" id="l5">
+        <img src="images/illustrations/leaf-yellow.png" alt="bg-shape" />
+      </div>
+      <div class="layer" id="l6">
+        <img src="images/illustrations/leaf-cyan.png" alt="bg-shape" />
+      </div>
+      <div class="layer" id="l7">
+        <img src="images/illustrations/dots-group-orange.png" alt="bg-shape" />
+      </div>
+      <div class="layer" id="l8">
+        <img src="images/illustrations/leaf-pink-round.png" alt="bg-shape" />
+      </div>
+      <div class="layer" id="l9">
+        <img src="images/illustrations/leaf-cyan-2.png" alt="bg-shape" />
+      </div>
+    </section>
+    <!-- /hero area -->
 
-        <!--Dùng dropdown -> không responsive cho moblie
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Tài khoản</a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="#">Tài khoản của tôi</a>
-              <a class="dropdown-item" href="ideas-table.html">Ý tưởng của tôi</a>
-              <a class="dropdown-item" href="#" >Đăng xuất</a>
+    <!-- /about -->
+
+    <section class="section">
+      <div class="container" id="musicHolder">
+        <blockquote>"Nhiều hơn nhưng gì bạn có"</blockquote>
+        <audio preload="auto" id="slogan" controls>
+          <source src="./audio/slogan.mp3" type="audio/mpeg" />
+        </audio>
+      </div>
+    </section>
+
+    <!-- top số lượng ý tưởng -->
+    <section class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-title">Số lượt tải cao nhất</h2>
+          </div>
+          <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
+            <div class="card shadow text-center">
+              <div
+                class="position-relative rounded-top progress-wrapper"
+                data-color="#fdb157"
+              >
+                <div class="wave" data-progress="99%"></div>
+              </div>
+              <div class="card-footer bg-white">
+                <h4 class="card-title">GAME<br /></h4>
+              </div>
             </div>
-        </li> -->
-      </ul>
-    </div>
-  </nav>
-</header>
-
-<!-- hero area -->
-<section class="hero-area bg-primary" id="parallax">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-11 mx-auto">
-        <h1 class="text-white font-tertiary"><strong>TDTU<br>UNBIND<br>THE BRAINS<br><i>Chủ đề: "Phá vỡ giới hạn"</i></strong></h1>
-      </div>
-    </div>
-  </div>
-  <div class="layer-bg w-100">
-    <img class="img-fluid w-100" src="images/illustrations/leaf-bg.png" alt="bg-shape">
-  </div>
-  <div class="layer" id="l2">
-    <img src="images/illustrations/dots-cyan.png" alt="bg-shape">
-  </div>
-  <div class="layer" id="l3">
-    <img src="images/illustrations/leaf-orange.png" alt="bg-shape">
-  </div>
-  <div class="layer" id="l4">
-    <img src="images/illustrations/dots-orange.png" alt="bg-shape">
-  </div>
-  <div class="layer" id="l5">
-    <img src="images/illustrations/leaf-yellow.png" alt="bg-shape">
-  </div>
-  <div class="layer" id="l6">
-    <img src="images/illustrations/leaf-cyan.png" alt="bg-shape">
-  </div>
-  <div class="layer" id="l7">
-    <img src="images/illustrations/dots-group-orange.png" alt="bg-shape">
-  </div>
-  <div class="layer" id="l8">
-    <img src="images/illustrations/leaf-pink-round.png" alt="bg-shape">
-  </div>
-  <div class="layer" id="l9">
-    <img src="images/illustrations/leaf-cyan-2.png" alt="bg-shape">
-  </div>
-  <!-- social icon -->
-  <ul class="list-unstyled ml-5 mt-3 position-relative zindex-1">
-    <li class="mb-3"><a class="text-white" href="https://www.facebook.com/tdtu.tmot/" target="_blank"><i class="ti-facebook" style="font-size: 2.2rem;"></i></a></li>
-    <li class="mb-3"><a class="text-white" href="https://www.instagram.com/doiphongtraotmot_tdtu/"  target="_blank"><i class="ti-instagram" style="font-size: 2.2rem;"></i></a></li>
-</ul>
-  <!-- /social icon -->
-</section>
-<!-- /hero area -->
-
-
-<!-- /about -->
-
-<section class="section">
-  <div class="container" id="musicHolder">
-    <blockquote>"A jump to the sky turns to a creator effort"</blockquote>
-      <audio preload="auto" id="slogan" controls>
-        <source src="./audio/slogan.mp3" type="audio/mpeg">
-      </audio>
-  </div>
-</section>
-
-<!--nền chào mừng kỉ niệm 90 năm thành lập đoàn-->
-<section class="section">
-  <div class="container">
-    <div class="position-relative">
-      <img class="kiniem90" src="./images/90/90.png" alt="Chào mừng kỉ niệm 90 năm thành lập Đoàn">
-    </div>
-  </div>
-</section>
-<!--/ nền chào mừng kỉ niệm 90 năm thành lập đoàn-->
-
-
-<!-- top số lượng ý tưởng -->
-<section class="section">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12 text-center">
-        <h2 class="section-title">Số lượng ý tưởng đăng ký cao nhất</h2>
-      </div>
-      <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
-        <div class="card shadow text-center">
-          <div class="position-relative rounded-top progress-wrapper" data-color="#fdb157">
-            <div class="wave" data-progress="99%"></div>
           </div>
-          <div class="card-footer bg-white">
-            <h4 class="card-title">Khoa Công nghệ thông tin<br>(1203)</h4>
+          <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
+            <div class="card shadow text-center">
+              <div
+                class="position-relative rounded-top progress-wrapper"
+                data-color="#9473e6"
+              >
+                <div class="wave" data-progress="80%"></div>
+              </div>
+              <div class="card-footer bg-white">
+                <h4 class="card-title">PHIM<br /></h4>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-      <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
-        <div class="card shadow text-center">
-          <div class="position-relative rounded-top progress-wrapper" data-color="#9473e6">
-            <div class="wave" data-progress="80%"></div>
+          <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
+            <div class="card shadow text-center">
+              <div
+                class="position-relative rounded-top progress-wrapper"
+                data-color="#bdecf6"
+              >
+                <div class="wave" data-progress="70%"></div>
+              </div>
+              <div class="card-footer bg-white">
+                <h4 class="card-title">HỌC TẬP<br /></h4>
+              </div>
+            </div>
           </div>
-          <div class="card-footer bg-white">
-            <h4 class="card-title">Khoa Kĩ thuật công trình<br>(925)</h4>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
-        <div class="card shadow text-center">
-          <div class="position-relative rounded-top progress-wrapper" data-color="#bdecf6">
-            <div class="wave" data-progress="70%"></div>
-          </div>
-          <div class="card-footer bg-white">
-            <h4 class="card-title">Khoa Quản trị kinh doanh<br>(825)</h4>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
-        <div class="card shadow text-center">
-          <div class="position-relative rounded-top progress-wrapper" data-color="#ffbcaa">
-            <div class="wave" data-progress="60%"></div>
-          </div>
-          <div class="card-footer bg-white">
-            <h4 class="card-title">Khoa Khoa học ứng dụng<br>(725)</h4>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- /top số lượng ý tưởng -->
-
-
-<!-- mục tiêu chương trình -->
-<section class="section">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 text-center">
-        <h2 class="section-title">Mục tiêu thực hiện chương trình</h2>
-      </div>
-      <div class="col-md-4 mb-4 mb-md-0">
-        <div class="card hover-shadow shadow">
-          <div class="card-body text-center px-4 py-5">
-            <i class="ti-palette icon mb-5 d-inline-block"></i>
-            <h4 class="mb-4">TẠO PHONG TRÀO THI ĐUA</h4>
-            <p style="font-size: 1rem;">
-              Nhằm tạo phong trào thi đua sôi nổi cho sinh viên, thúc đẩy, hỗ trợ các hoạt động sáng tạo trong sinh viên.
-              Đồng thời là kênh thông tin chia sẻ ý tưởng của Đoàn viên, Hội viên đóng góp vào sự phát triển của xã hội.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 mb-4 mb-md-0">
-        <div class="card active-bg-primary hover-shadow shadow">
-          <div class="card-body text-center px-4 py-5">
-            <i class="ti-vector icon mb-5 d-inline-block"></i>
-            <h4 class="mb-4">THỰC HIỆN</h4>
-            <p style="font-size: 1rem;">
-              Thực hiện chương trình công tác Hội và phong trào sinh viên năm học 2020-2021.
-              Chào mừng tháng Thanh niên, kỷ niệm ngày thành lập Đoàn Thanh niên Cộng sản Hồ Chí Minh.
-            </p>
-
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 mb-4 mb-md-0">
-        <div class="card hover-shadow shadow">
-          <div class="card-body text-center px-4 py-5">
-            <i class="ti-panel icon mb-5 d-inline-block"></i>
-            <h4 class="mb-4">VAI TRÒ VÀ NHẬN THỨC</h4>
-            <p style="font-size: 1rem;">
-              Nâng cao vai trò và nhận thức của sinh viên trong việc tham gia xây dựng môi trường có chất lượng sống tốt,
-              văn minh, hiện đại; khuyến khích ứng dụng công nghệ thông tin, khoa học kỹ thuật để nâng cao chất lượng sống,
-              năng lực cạnh tranh của kinh tế đất nước.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- /mục tiêu chương trình -->
-
-<!-- ý tưởng - link tới register.html -->
-<section class="section">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 text-center">
-        <h2 class="section-title">Ý tưởng của bạn là?</h2>
-      </div>
-    </div>
-    <div class="row shuffle-wrapper">
-      <div class="col-lg-4 col-6 mb-4 shuffle-item">
-        <div class="position-relative rounded hover-wrapper">
-          <img src="images/ideas/item-1.png" alt="portfolio-image" class="img-fluid rounded w-100">
-          <div class="hover-overlay">
-            <div class="hover-content">
-              <a class="btn btn-light btn-sm" href="register.html">Đăng ký ý tưởng</a>
+          <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
+            <div class="card shadow text-center">
+              <div
+                class="position-relative rounded-top progress-wrapper"
+                data-color="#ffbcaa"
+              >
+                <div class="wave" data-progress="60%"></div>
+              </div>
+              <div class="card-footer bg-white">
+                <h4 class="card-title">SÁCH<br /></h4>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="col-lg-4 col-6 mb-4 shuffle-item">
-        <div class="position-relative rounded hover-wrapper">
-          <img src="images/ideas/item-2.png" alt="portfolio-image" class="img-fluid rounded w-100">
-          <div class="hover-overlay">
-            <div class="hover-content">
-              <a class="btn btn-light btn-sm" href="register.html">Đăng ký ý tưởng</a>
+    </section>
+    <!-- /top số lượng ý tưởng -->
+
+    <!-- ý tưởng - link tới register.html -->
+    <section class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h2 class="section-title">CHỌN LĨNH VỰC</h2>
+          </div>
+        </div>
+        <div class="row shuffle-wrapper">
+          <div class="col-lg-4 col-6 mb-4 shuffle-item">
+            <div class="position-relative rounded hover-wrapper">
+              <img
+                src="images/ideas/item-1.png"
+                alt="portfolio-image"
+                class="img-fluid rounded w-100"
+              />
+              <div class="hover-overlay">
+                <div class="hover-content">
+                  <a class="btn btn-light btn-sm" href="register.html"
+                    >Ứng dụng khác</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-6 mb-4 shuffle-item">
+            <div class="position-relative rounded hover-wrapper">
+              <img
+                src="images/ideas/item-2.png"
+                alt="portfolio-image"
+                class="img-fluid rounded w-100"
+              />
+              <div class="hover-overlay">
+                <div class="hover-content">
+                  <a class="btn btn-light btn-sm" href="register.html">Game</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-6 mb-4 shuffle-item">
+            <div class="position-relative rounded hover-wrapper">
+              <img
+                src="images/ideas/item-3.png"
+                alt="portfolio-image"
+                class="img-fluid rounded w-100"
+              />
+              <div class="hover-overlay">
+                <div class="hover-content">
+                  <a class="btn btn-light btn-sm" href="register.html">Phim</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-6 mb-4 shuffle-item">
+            <div class="position-relative rounded hover-wrapper">
+              <img
+                src="images/ideas/item-4.png"
+                alt="portfolio-image"
+                class="img-fluid rounded w-100"
+              />
+              <div class="hover-overlay">
+                <div class="hover-content">
+                  <a class="btn btn-light btn-sm" href="register.html">Sách</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-6 mb-4 shuffle-item">
+            <div class="position-relative rounded hover-wrapper">
+              <img
+                src="images/ideas/item-5.png"
+                alt="portfolio-image"
+                class="img-fluid rounded w-100"
+              />
+              <div class="hover-overlay">
+                <div class="hover-content">
+                  <a class="btn btn-light btn-sm" href="register.html"
+                    >Học tập</a
+                  >
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="col-lg-4 col-6 mb-4 shuffle-item">
-        <div class="position-relative rounded hover-wrapper">
-          <img src="images/ideas/item-3.png" alt="portfolio-image" class="img-fluid rounded w-100">
-          <div class="hover-overlay">
-            <div class="hover-content">
-              <a class="btn btn-light btn-sm" href="register.html">Đăng ký ý tưởng</a>
+    </section>
+    <!-- / ý tưởng - link tới register.html-->
+
+    <!-- ứng dụng tiêu biểu -->
+    <section class="section bg-primary position-relative testimonial-bg-shapes">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h2 class="section-title text-white mb-5">Ứng dụng tiêu biểu</h2>
+          </div>
+          <div class="col-lg-10 mx-auto testimonial-slider">
+            <!-- slider-item -->
+            <div class="text-center testimonial-content">
+              <i class="ti-quote-right text-white icon mb-4 d-inline-block"></i>
+              <p class="text-white mb-4">
+                Thuỳ Trang đặt tên máy là
+                <strong>agnajkvn</strong>, mô tả gì đó
+                <strong
+                  >thiết bị còn hỗ trợ việc tính toán các phép tính phức tạp hơn
+                  như khai căn, lũy thừa.</strong
+                >
+                "Sau nhiều lần bổ sung, hoàn thiện, thiết bị hiện có thể hỗ trợ
+                cho học sinh khiếm thị lẫn sáng mắt", thầy Sơn nói.
+              </p>
+              <img
+                class="img-fluid rounded-circle mb-4 d-inline-block"
+                src="images/index/client-1.png"
+                alt="client-image"
+              />
+              <h4 class="text-white">
+                Chế tạo thiết bị đa chức năng giúp trẻ khiếm thị học chữ, toán
+                song ngữ và nghe nhạc
+              </h4>
+              <h6 class="text-light mb-4">
+                Phạm Thị Thùy Trang, lớp 10 trường THPT Trần Văn Quan.
+              </h6>
+            </div>
+            <!-- slider-item -->
+            <div class="text-center testimonial-content">
+              <i class="ti-quote-right text-white icon mb-4 d-inline-block"></i>
+              <p class="text-white mb-4">
+                Ý tưởng ban đầu chỉ nhằm giải cứu nông sản Việt trước nguy cơ ùn
+                ứ do dịch COVID-19, chàng giám đốc 8X đã sáng tạo ra những sản
+                phẩm độc lạ,
+                <strong
+                  >xuất khẩu sang 42 nước trên thế giới, dưới 2 thương hiệu Việt
+                  được đăng ký bản quyền</strong
+                >
+                là Mr Rice và Duy Anh. Để có công thức hoàn chỉnh sản xuất đến
+                hàng tấn nguyên liệu dưa hấu, thanh long mỗi ngày, anh đã tiến
+                hành thử nghiệm nhiều lần. Anh Toàn tiết lộ thời gian tới doanh
+                nghiệp sẽ tiếp tục nghiên cứu áp dụng thêm các sản phẩm tương
+                tự. Việt Nam có thế mạnh về nông nghiệp và có rất nhiều loại rau
+                quả ngon, bổ dưỡng. Trong khi khách hàng rất chuộng những sản
+                phẩm mới lạ, việc sáng tạo trong chế biến nông sản để gia tăng
+                giá trị là rất cần thiết. Đây cũng là cách
+                <strong>“giải cứu” nông sản hiệu quả</strong> cho nông dân.
+              </p>
+              <img
+                class="img-fluid rounded-circle mb-4 d-inline-block"
+                src="images/index/client-2.png"
+                alt="client-image"
+              />
+              <h4 class="text-white">
+                Ý tưởng từ giải cứu nông sản: Mang bún dưa hấu, bánh tráng thanh
+                long đi Tây
+              </h4>
+              <h6 class="text-light mb-4">
+                Lê Duy Toàn (32 tuổi) - Giám đốc Công ty TNHH XNK thực phẩm Duy
+                Anh (huyện Củ Chi, TPHCM)
+              </h6>
             </div>
           </div>
         </div>
       </div>
-      <div class="col-lg-4 col-6 mb-4 shuffle-item">
-        <div class="position-relative rounded hover-wrapper">
-          <img src="images/ideas/item-4.png" alt="portfolio-image" class="img-fluid rounded w-100">
-          <div class="hover-overlay">
-            <div class="hover-content">
-              <a class="btn btn-light btn-sm" href="register.html">Đăng ký ý tưởng</a>
+      <!-- bg shapes -->
+      <img
+        src="images/backgrounds/map.png"
+        alt="map"
+        class="img-fluid bg-map"
+      />
+      <img
+        src="images/illustrations/dots-group-v.png"
+        alt="bg-shape"
+        class="img-fluid bg-shape-1"
+      />
+      <img
+        src="images/illustrations/leaf-orange.png"
+        alt="bg-shape"
+        class="img-fluid bg-shape-2"
+      />
+      <img
+        src="images/illustrations/dots-group-sm.png"
+        alt="bg-shape"
+        class="img-fluid bg-shape-3"
+      />
+      <img
+        src="images/illustrations/leaf-pink-round.png"
+        alt="bg-shape"
+        class="img-fluid bg-shape-4"
+      />
+      <img
+        src="images/illustrations/leaf-cyan.png"
+        alt="bg-shape"
+        class="img-fluid bg-shape-5"
+      />
+    </section>
+    <!-- /sáng tạo tiêu biểu -->
+
+    <!-- footer -->
+    <footer class="bg-dark footer-section">
+      <div class="section">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <h5 class="text-light">Email</h5>
+              <p class="text-white paragraph-lg font-secondary">
+                leminhoang61tk@gmail.com
+              </p>
+            </div>
+            <div class="col-md-4">
+              <h5 class="text-light">Phone</h5>
+              <p class="text-white paragraph-lg font-secondary">
+                +84 843912448
+              </p>
+            </div>
+            <div class="col-md-4">
+              <h5 class="text-light">Address</h5>
+              <p class="text-white paragraph-lg font-secondary">
+                Số 19, Nguyễn Hữu Thọ, Phường Tân Phong, Quận 7
+              </p>
             </div>
           </div>
         </div>
       </div>
-      <div class="col-lg-4 col-6 mb-4 shuffle-item">
-        <div class="position-relative rounded hover-wrapper">
-          <img src="images/ideas/item-5.png" alt="portfolio-image" class="img-fluid rounded w-100">
-          <div class="hover-overlay">
-            <div class="hover-content">
-              <a class="btn btn-light btn-sm" href="register.html">Đăng ký ý tưởng</a>
-            </div>
-          </div>
-        </div>
+      <div class="border-top text-center border-dark py-5">
+        <p class="mb-0 text-light">
+          Copyright ©
+          <script>
+            var CurrentYear = new Date().getFullYear();
+            document.write(CurrentYear);
+          </script>
+          <a href="https://www.facebook.com/tdtu.tmot"></a>
+        </p>
       </div>
-    </div>
-  </div>
-</section>
-<!-- / ý tưởng - link tới register.html-->
+    </footer>
+    <!-- /footer -->
 
-<!-- sáng tạo tiêu biểu -->
-<section class="section bg-primary position-relative testimonial-bg-shapes">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 text-center">
-        <h2 class="section-title text-white mb-5">Sáng tạo tiêu biểu</h2>
-      </div>
-      <div class="col-lg-10 mx-auto testimonial-slider">
-        <!-- slider-item -->
-        <div class="text-center testimonial-content">
-          <i class="ti-quote-right text-white icon mb-4 d-inline-block"></i>
-          <p class="text-white mb-4">
-            Thuỳ Trang đặt tên máy là <strong>Thiết bị học toán, chữ cái cho người khiếm thị</strong>, có chức năng giống "chiếc hộp thần kỳ".
-            Thiết bị gồm nhiều phím khắc chữ cái nổi, công thức hình học phục vụ cho việc học chữ, toán số, toán hình tiếng Việt và tiếng Anh; phím chức năng chuyển đổi giữa các chế độ.
-            Chiếc hộp còn có loa phát nhạc khá to, đọc giờ và màn hình led hiển thị.
-            Sau hơn 3 tháng nỗ lực với sự giúp đỡ của các thầy trong trường và đàn anh khóa trước,
-            Thùy Trang hoàn thành thiết bị và mang đến các trường khiếm thị thực nghiệm để được thầy cô và học sinh góp ý.
-            Thầy Cao Ngọc Sơn (giáo viên hướng dẫn Thuỳ Trang) cho biết, điểm nổi bật của thiết bị này là thiết kế trực quan,
-            phát thông tin song ngữ giúp học sinh khiếm thị học chữ cái, học toán dễ dàng và hiệu quả.
-            Ngoài các phép toán đơn giản ở cấp tiểu học, <strong>thiết bị còn hỗ trợ việc tính toán các phép tính phức tạp hơn như khai căn, lũy thừa.</strong>
-            "Sau nhiều lần bổ sung, hoàn thiện, thiết bị hiện có thể hỗ trợ cho học sinh khiếm thị lẫn sáng mắt", thầy Sơn nói.
+    <!-- jQuery -->
+    <script src="plugins/jQuery/jquery.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="plugins/bootstrap/bootstrap.min.js"></script>
+    <!-- slick slider -->
+    <script src="plugins/slick/slick.min.js"></script>
+    <!-- filter -->
+    <script src="plugins/shuffle/shuffle.min.js"></script>
 
-          </p>
-          <img class="img-fluid rounded-circle mb-4 d-inline-block" src="images/index/client-1.png"
-            alt="client-image">
-          <h4 class="text-white">Chế tạo thiết bị đa chức năng giúp trẻ khiếm thị học chữ, toán song ngữ và nghe nhạc</h4>
-          <h6 class="text-light mb-4">Phạm Thị Thùy Trang, lớp 10 trường THPT Trần Văn Quan.</h6>
-        </div>
-        <!-- slider-item -->
-        <div class="text-center testimonial-content">
-          <i class="ti-quote-right text-white icon mb-4 d-inline-block"></i>
-          <p class="text-white mb-4">
-            Ý tưởng ban đầu chỉ nhằm giải cứu nông sản Việt trước nguy cơ ùn ứ do dịch COVID-19,
-            chàng giám đốc 8X đã sáng tạo ra những sản phẩm độc lạ, <strong>xuất khẩu sang 42 nước trên thế giới,
-            dưới 2 thương hiệu Việt được đăng ký bản quyền</strong> là Mr Rice và Duy Anh.
-            Để có công thức hoàn chỉnh sản xuất đến hàng tấn nguyên liệu dưa hấu, thanh long mỗi ngày,
-            anh đã tiến hành thử nghiệm nhiều lần.
-            Anh Toàn tiết lộ thời gian tới doanh nghiệp sẽ tiếp tục nghiên cứu áp dụng thêm các sản phẩm tương tự.
-            Việt Nam có thế mạnh về nông nghiệp và có rất nhiều loại rau quả ngon, bổ dưỡng.
-            Trong khi khách hàng rất chuộng những sản phẩm mới lạ, việc sáng tạo trong chế biến nông sản để gia tăng giá trị là rất cần thiết.
-            Đây cũng là cách <strong>“giải cứu” nông sản hiệu quả</strong> cho nông dân.
-          </p>
-          <img class="img-fluid rounded-circle mb-4 d-inline-block" src="images/index/client-2.png"
-            alt="client-image">
-          <h4 class="text-white">Ý tưởng từ giải cứu nông sản: Mang bún dưa hấu, bánh tráng thanh long đi Tây</h4>
-          <h6 class="text-light mb-4">Lê Duy Toàn (32 tuổi) - Giám đốc Công ty TNHH XNK thực phẩm Duy Anh (huyện Củ Chi, TPHCM) </h6>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- bg shapes -->
-  <img src="images/backgrounds/map.png" alt="map" class="img-fluid bg-map">
-  <img src="images/illustrations/dots-group-v.png" alt="bg-shape" class="img-fluid bg-shape-1">
-  <img src="images/illustrations/leaf-orange.png" alt="bg-shape" class="img-fluid bg-shape-2">
-  <img src="images/illustrations/dots-group-sm.png" alt="bg-shape" class="img-fluid bg-shape-3">
-  <img src="images/illustrations/leaf-pink-round.png" alt="bg-shape" class="img-fluid bg-shape-4">
-  <img src="images/illustrations/leaf-cyan.png" alt="bg-shape" class="img-fluid bg-shape-5">
-</section>
-<!-- /sáng tạo tiêu biểu -->
-
-<!-- footer -->
-<footer class="bg-dark footer-section">
-  <div class="section">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <h5 class="text-light">Email</h5>
-          <p class="text-white paragraph-lg font-secondary">banhanhchinhtmot@gmail.com</p>
-        </div>
-        <div class="col-md-4">
-          <h5 class="text-light">Phone</h5>
-          <p class="text-white paragraph-lg font-secondary">+84 888745255</p>
-        </div>
-        <div class="col-md-4">
-          <h5 class="text-light">Address</h5>
-          <p class="text-white paragraph-lg font-secondary">Số 19, Nguyễn Hữu Thọ, Phường Tân Phong, Quận 7</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="border-top text-center border-dark py-5">
-    <p class="mb-0 text-light">Copyright ©<script>
-        var CurrentYear = new Date().getFullYear()
-        document.write(CurrentYear)
-      </script><a href="https://www.facebook.com/tdtu.tmot"> hnm-ntp-TMOT</a></p>
-  </div>
-</footer>
-<!-- /footer -->
-
-<!-- jQuery -->
-<script src="plugins/jQuery/jquery.min.js"></script>
-<!-- Bootstrap JS -->
-<script src="plugins/bootstrap/bootstrap.min.js"></script>
-<!-- slick slider -->
-<script src="plugins/slick/slick.min.js"></script>
-<!-- filter -->
-<script src="plugins/shuffle/shuffle.min.js"></script>
-
-<!-- Main Script -->
-<script src="js/script.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-auth.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script>
-<script src="js/index.js"></script>
-
-</body>
+    <!-- Main Script -->
+    <script src="js/script.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script>
+    <script src="js/index.js"></script>
+  </body>
 </html>

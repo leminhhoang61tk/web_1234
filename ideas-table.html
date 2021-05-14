@@ -1,190 +1,229 @@
 <!DOCTYPE html>
 <html lang="zxx">
+  <head>
+    <!--Admin-->
+    <title>TMOT | ADMIN</title>
 
-<head>
-  <!--REGISTER IDEAS - Ý TƯỞNG-->
-  <title>TMOT | Ideas</title>
-  
-  <meta charset="utf-8">
-  <!-- mobile responsive meta -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  
-  <!--Font Awaresome-->
-  <link rel="stylesheet" href="plugins/fonts/fontawesome-free-5.15.2-web/css/all.min.css">
+    <meta charset="utf-8" />
+    <!-- mobile responsive meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
 
+    <!--Font Awaresome-->
+    <link
+      rel="stylesheet"
+      href="plugins/fonts/fontawesome-free-5.15.2-web/css/all.min.css"
+    />
 
-  <!-- ** Plugins Needed for the Project ** -->
-  <!-- Bootstrap -->
-  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
-  <!-- slick slider -->
-  <link rel="stylesheet" href="plugins/slick/slick.css">
-  <!-- themefy-icon -->
-  <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
+    <!-- ** Plugins Needed for the Project ** -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css" />
+    <!-- slick slider -->
+    <link rel="stylesheet" href="plugins/slick/slick.css" />
+    <!-- themefy-icon -->
+    <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css" />
 
-  <!-- Main Stylesheet -->
-  <link href="css/style.css" rel="stylesheet">
-  
-  <!--Favicon-->
-  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <!-- Main Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
 
-</head>
+    <!--Favicon-->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+  </head>
 
-<body>
-  
+  <body>
+    <header class="navigation fixed-top">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand font-tertiary h3 logo" href="index.html">
+          <!-- <img src="images/logo.png" alt="Myself"> -->
+          <img src="images/logo.png" alt="tdtu" style="max-width: 200px" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navigation"
+          aria-controls="navigation"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-<header class="navigation fixed-top">
-  <nav class="navbar navbar-expand-lg navbar-dark">
-    <a class="navbar-brand font-tertiary h3 logo" href="index.html">
-      <!-- <img src="images/logo.png" alt="Myself"> -->
-      <img src="images/logo.png" alt="tdtu" style="max-width: 200px;">
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
-      aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse text-center" id="navigation">
-      <ul class="navbar-nav ml-auto">
-
-        <li class="nav-item">
-          <a class="nav-link" href="register-ideas.html">Đăng ký ý tưởng</a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="ideas-table.html">Ý tưởng</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="ideas-detail.html">Chi tiết ý tưởng</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="ideas-list.html">Thống kê ý tưởng</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="" id="usernameindex"></a>
-        </li>
-        <!--TRƯỜNG HỢP ĐĂNG NHẬP-->
-          <li class="nav-item">
-              <a class="nav-link" href="" id="logouticon" onclick="logout()"></a>
-          </li>
-      </ul>
-    </div>
-  </nav>
-</header>
-
-<!-- page title -->
-<section class="page-title bg-primary position-relative">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 text-center">
-        <h1 class="text-white font-tertiary"><strong>Ý TƯỞNG</strong></h1>
-      </div>
-    </div>
-  </div>
-  <!-- background shapes -->
-  <img src="images/illustrations/page-title.png" alt="illustrations" class="bg-shape-1 w-100">
-  <img src="images/illustrations/leaf-pink-round.png" alt="illustrations" class="bg-shape-2">
-  <img src="images/illustrations/dots-cyan.png" alt="illustrations" class="bg-shape-3">
-  <img src="images/illustrations/leaf-orange.png" alt="illustrations" class="bg-shape-4">
-  <img src="images/illustrations/leaf-yellow.png" alt="illustrations" class="bg-shape-5">
-  <img src="images/illustrations/dots-group-cyan.png" alt="illustrations" class="bg-shape-6">
-  <img src="images/illustrations/leaf-cyan-lg.png" alt="illustrations" class="bg-shape-7">
-</section>
-<!-- /page title -->
-
-<!--table ideas-->
-<div class="table-responsive table-custom"  style="overflow-x:auto;">
-  <table class="table table-hover table-ideas">
-      <thead>
-          <tr>
-              <th scope="col">STT</th>
-              <th scope="col">Họ tên</th>
-              <th scope="col">Mã số sinh viên</th>
-              <th scope="col">Ý tưởng</th>
-              <th scope="col"></th>
-          </tr>
-      </thead>
-      <tbody>
-          <tr>
-              <th scope="row">1</th>
-              <td>Hà Ngọc Mỹ</td>
-              <td>51800000</td>
-              <td>Ý tưởng sáng tạo 123</td>
-              <td>
-                <i class="far fa-plus-square icon-add"></i>
-                <i class="far fa-trash-alt icon-delete"></i>
-              </td>
-  
-          </tr>
-          <tr>
-              <th scope="row">2</th>
-              <td>Nguyễn Ngọc Hân</td>
-              <td>51897564</td>
-              <td>Ý tưởng sáng tạo 456</td>
-              <td>
-                <i class="far fa-plus-square icon-add"></i>
-                <i class="far fa-trash-alt icon-delete"></i>
-              </td>
-          </tr>
-          <tr>
-              <th scope="row">3</th>
-              <td>Ngô Thanh Phú</td>
-              <td>51812121</td>
-              <td>Ý tưởng sáng tạo 789</td>
-              <td>
-                <i class="far fa-plus-square icon-add"></i>
-                <i class="far fa-trash-alt icon-delete"></i>
-              </td>
-          </tr>
-      </tbody>
-  </table>
-</div>
-<!--/table ideas-->
-
-<!-- footer -->
-<footer class="bg-dark footer-section">
-  <div class="section">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <h5 class="text-light">Email</h5>
-          <p class="text-white paragraph-lg font-secondary">banhanhchinhtmot@gmail.com</p>
+        <div class="collapse navbar-collapse text-center" id="navigation">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="ideas-detail.html">Chi tiết ứng dụng</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ideas-list.html">Thống kê ứng dụng</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="" id="usernameindex"></a>
+            </li>
+            <!--TRƯỜNG HỢP ĐĂNG NHẬP-->
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fas fa-sign-out-alt nav-link--icon"></i>
+              </a>
+            </li>
+          </ul>
         </div>
-        <div class="col-md-4">
-          <h5 class="text-light">Phone</h5>
-          <p class="text-white paragraph-lg font-secondary">+84 888745255</p>
-        </div>
-        <div class="col-md-4">
-          <h5 class="text-light">Address</h5>
-          <p class="text-white paragraph-lg font-secondary">Số 19, Nguyễn Hữu Thọ, Phường Tân Phong, Quận 7</p>
+      </nav>
+    </header>
+
+    <!-- page title -->
+    <section class="page-title bg-primary position-relative">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h1 class="text-white font-tertiary"><strong>ADMIN</strong></h1>
+          </div>
         </div>
       </div>
+      <!-- background shapes -->
+      <img
+        src="images/illustrations/page-title.png"
+        alt="illustrations"
+        class="bg-shape-1 w-100"
+      />
+      <img
+        src="images/illustrations/leaf-pink-round.png"
+        alt="illustrations"
+        class="bg-shape-2"
+      />
+      <img
+        src="images/illustrations/dots-cyan.png"
+        alt="illustrations"
+        class="bg-shape-3"
+      />
+      <img
+        src="images/illustrations/leaf-orange.png"
+        alt="illustrations"
+        class="bg-shape-4"
+      />
+      <img
+        src="images/illustrations/leaf-yellow.png"
+        alt="illustrations"
+        class="bg-shape-5"
+      />
+      <img
+        src="images/illustrations/dots-group-cyan.png"
+        alt="illustrations"
+        class="bg-shape-6"
+      />
+      <img
+        src="images/illustrations/leaf-cyan-lg.png"
+        alt="illustrations"
+        class="bg-shape-7"
+      />
+    </section>
+    <!-- /page title -->
+
+    <!--table ideas-->
+    <div class="table-responsive table-custom" style="overflow-x: auto">
+      <table class="table table-hover table-ideas">
+        <thead>
+          <tr>
+            <th scope="col">STT</th>
+            <th scope="col">Họ tên</th>
+            <th scope="col">ID</th>
+            <th scope="col">Ứng dụng</th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Lê Minh Hoàng</td>
+            <td>51900078</td>
+            <td>Ứng dụng 1</td>
+            <td>
+              <i class="far fa-plus-square icon-add"></i>
+              <i class="far fa-trash-alt icon-delete"></i>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Giản Viết Đức</td>
+            <td>51897564</td>
+            <td>Ứng dụng 2</td>
+            <td>
+              <i class="far fa-plus-square icon-add"></i>
+              <i class="far fa-trash-alt icon-delete"></i>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Nguyễn Huỳnh Anh</td>
+            <td>51812121</td>
+            <td>Ứng dụng 3</td>
+            <td>
+              <i class="far fa-plus-square icon-add"></i>
+              <i class="far fa-trash-alt icon-delete"></i>
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
-  </div>
-  <div class="border-top text-center border-dark py-5">
-    <p class="mb-0 text-light">Copyright ©<script>
-        var CurrentYear = new Date().getFullYear()
-        document.write(CurrentYear)
-      </script><a href="https://www.facebook.com/tdtu.tmot"> hnm-ntp-TMOT</a></p>
-  </div>
-</footer>
-<!--/footer-->
+    <!--/table ideas-->
 
-<!-- jQuery -->
-<script src="plugins/jQuery/jquery.min.js"></script>
-<!-- Bootstrap JS -->
-<script src="plugins/bootstrap/bootstrap.min.js"></script>
-<!-- slick slider -->
-<script src="plugins/slick/slick.min.js"></script>
-<!-- filter -->
-<script src="plugins/shuffle/shuffle.min.js"></script>
+    <!-- footer -->
+    <footer class="bg-dark footer-section">
+      <div class="section">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <h5 class="text-light">Email</h5>
+              <p class="text-white paragraph-lg font-secondary">
+                leminhoang61tk
+              </p>
+            </div>
+            <div class="col-md-4">
+              <h5 class="text-light">Phone</h5>
+              <p class="text-white paragraph-lg font-secondary">
+                +84 888745255
+              </p>
+            </div>
+            <div class="col-md-4">
+              <h5 class="text-light">Address</h5>
+              <p class="text-white paragraph-lg font-secondary">
+                Số 19, Nguyễn Hữu Thọ, Phường Tân Phong, Quận 7
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="border-top text-center border-dark py-5">
+        <p class="mb-0 text-light">
+          Copyright ©
+          <script>
+            var CurrentYear = new Date().getFullYear();
+            document.write(CurrentYear);
+          </script>
+        </p>
+      </div>
+    </footer>
+    <!--/footer-->
 
-<!-- Main Script -->
-<script src="js/script.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-auth.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script>
-<script src="js/index.js"></script>
-</body>
+    <!-- jQuery -->
+    <script src="plugins/jQuery/jquery.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="plugins/bootstrap/bootstrap.min.js"></script>
+    <!-- slick slider -->
+    <script src="plugins/slick/slick.min.js"></script>
+    <!-- filter -->
+    <script src="plugins/shuffle/shuffle.min.js"></script>
+
+    <!-- Main Script -->
+    <script src="js/script.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script>
+    <script src="js/index.js"></script>
+  </body>
 </html>

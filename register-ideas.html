@@ -1,199 +1,257 @@
 <!DOCTYPE html>
 <html lang="zxx">
+  <head>
+    <!--IDEAS - Ý TƯỞNG-->
+    <title>AT | GỬI APP</title>
 
-<head>
-  <!--IDEAS - Ý TƯỞNG-->
-  <title>TMOT | Ideas</title>
-  
-  <meta charset="utf-8">
-  <!-- mobile responsive meta -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  
-  <!--Font Awaresome-->
-  <link rel="stylesheet" href="plugins/fonts/fontawesome-free-5.15.2-web/css/all.min.css">
+    <meta charset="utf-8" />
+    <!-- mobile responsive meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
 
-  <!-- ** Plugins Needed for the Project ** -->
-  <!-- Bootstrap -->
-  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
-  <!-- slick slider -->
-  <link rel="stylesheet" href="plugins/slick/slick.css">
-  <!-- themefy-icon -->
-  <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
+    <!--Font Awaresome-->
+    <link
+      rel="stylesheet"
+      href="plugins/fonts/fontawesome-free-5.15.2-web/css/all.min.css"
+    />
 
-  <!-- Main Stylesheet -->
-  <link href="css/style.css" rel="stylesheet">
-  
-  <!--Favicon-->
-  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <!-- ** Plugins Needed for the Project ** -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css" />
+    <!-- slick slider -->
+    <link rel="stylesheet" href="plugins/slick/slick.css" />
+    <!-- themefy-icon -->
+    <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css" />
 
-</head>
+    <!-- Main Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
 
-<body>
-  
+    <!--Favicon-->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+  </head>
 
-<header class="navigation fixed-top">
-  <nav class="navbar navbar-expand-lg navbar-dark">
-    <a class="navbar-brand font-tertiary h3 logo" href="index.html">
-      <!-- <img src="images/logo.png" alt="Myself"> -->
-      <img src="images/logo.png" alt="tdtu" style="max-width: 200px;">
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
-      aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+  <body>
+    <header class="navigation fixed-top">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand font-tertiary h3 logo" href="index.html">
+          <!-- <img src="images/logo.png" alt="Myself"> -->
+          <img src="images/logo.png" alt="tdtu" style="max-width: 200px" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navigation"
+          aria-controls="navigation"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <div class="collapse navbar-collapse text-center" id="navigation">
-      <ul class="navbar-nav ml-auto">
+        <div class="collapse navbar-collapse text-center" id="navigation">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="register-ideas.html">Upload ứng dụng</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ideas-table.html">Duyệt ứng dụng</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="" id="usernameindex"></a>
+            </li>
+            <li class="nav-item"></li>
+            <!--TRƯỜNG HỢP ĐĂNG NHẬP-->
+            <a class="nav-link" href="#">
+              <i class="fas fa-sign-out-alt nav-link--icon"></i>
+            </a>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
-        <li class="nav-item active">
-          <a class="nav-link " href="register-ideas.html">Đăng ký ý tưởng</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="ideas-table.html">Ý tưởng</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="" id="usernameindex"></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="" id="logouticon" onclick="logout()"></a>
-        </li>
-        <!--TRƯỜNG HỢP ĐĂNG NHẬP-->
-      </ul>
-    </div>
-  </nav>
-</header>
-
-<!-- page title -->
-<section class="page-title bg-primary position-relative">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 text-center">
-        <h1 class="text-white font-tertiary"><strong>ĐĂNG KÝ Ý TƯỞNG</strong></h1>
+    <!-- page title -->
+    <section class="page-title bg-primary position-relative">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h1 class="text-white font-tertiary">
+              <strong>UPLOAD ỨNG DỤNG</strong>
+            </h1>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-  <!-- background shapes -->
-  <img src="images/illustrations/page-title.png" alt="illustrations" class="bg-shape-1 w-100">
-  <img src="images/illustrations/leaf-pink-round.png" alt="illustrations" class="bg-shape-2">
-  <img src="images/illustrations/dots-cyan.png" alt="illustrations" class="bg-shape-3">
-  <img src="images/illustrations/leaf-orange.png" alt="illustrations" class="bg-shape-4">
-  <img src="images/illustrations/leaf-yellow.png" alt="illustrations" class="bg-shape-5">
-  <img src="images/illustrations/dots-group-cyan.png" alt="illustrations" class="bg-shape-6">
-  <img src="images/illustrations/leaf-cyan-lg.png" alt="illustrations" class="bg-shape-7">
-</section>
-<!-- /page title -->
+      <!-- background shapes -->
+      <img
+        src="images/illustrations/page-title.png"
+        alt="illustrations"
+        class="bg-shape-1 w-100"
+      />
+      <img
+        src="images/illustrations/leaf-pink-round.png"
+        alt="illustrations"
+        class="bg-shape-2"
+      />
+      <img
+        src="images/illustrations/dots-cyan.png"
+        alt="illustrations"
+        class="bg-shape-3"
+      />
+      <img
+        src="images/illustrations/leaf-orange.png"
+        alt="illustrations"
+        class="bg-shape-4"
+      />
+      <img
+        src="images/illustrations/leaf-yellow.png"
+        alt="illustrations"
+        class="bg-shape-5"
+      />
+      <img
+        src="images/illustrations/dots-group-cyan.png"
+        alt="illustrations"
+        class="bg-shape-6"
+      />
+      <img
+        src="images/illustrations/leaf-cyan-lg.png"
+        alt="illustrations"
+        class="bg-shape-7"
+      />
+    </section>
+    <!-- /page title -->
 
-<!-- contact -->
-<section class="section section-on-footer" data-background="images/backgrounds/bg-dots.png">
-  <div class="container">
-    <div class="row">
-      <!-- <div class="col-12 text-center">
+    <!-- contact -->
+    <section
+      class="section section-on-footer"
+      data-background="images/backgrounds/bg-dots.png"
+    >
+      <div class="container">
+        <div class="row">
+          <!-- <div class="col-12 text-center">
         <h2 class="section-title"></h2>
       </div> -->
-      <div class="col-lg-8 mx-auto">
-        <div class="bg-white rounded text-center p-5 shadow-down">
-          <h3 class="mb-80">TDTU UNBIND THE BRAINS<br> Chủ đề: "Phá vỡ giới hạn"</h3>
-          <!--FORM ĐĂNG KÝ-->
-          <form action="#" class="row">
-            <!--Cột Lĩnh Vực-->
-            <div class="col-12">
-              <div class="form-group">
-                <select id="selectLinhVuc" class="form-control">
-                  <option value="">---Chọn Lĩnh Vực---</option>
-                  <option value="">Ẩm thực</option>
-                  <option value="">Công nghệ thông tin</option>
-                  <option value="">Công tác tuyên truyền</option>
-                  <option value="">Điện - điện tử</option>
-                  <option value="">Du lịch - Giải trí</option>
-                  <option value="">Giáo dục - Đào tạo</option>
-                  <option value="">Giao thông vận tải</option>
-                  <option value="">Kinh doanh</option>
-                  <option value="">Môi trường</option>
-                  <option value="">Nông - Lâm - Ngư nghiệp</option>
-                  <option value="">Thời trang - Mỹ nghệ</option>
-                  <option value="">Tiết kiệm</option>
-                  <option value="">Văn hóa - Nghệ thuật</option>
-                  <option value="">Y tế</option>
-                  <option value="">Ý tưởng khác</option>
-                </select>
-              </div>
+          <div class="col-lg-8 mx-auto">
+            <div class="bg-white rounded text-center p-5 shadow-down">
+              <h3 class="mb-80">UPLOAD NỘI DUNG<br /></h3>
+              <!--FORM ĐĂNG KÝ-->
+              <form action="#" class="row">
+                <!--Cột Lĩnh Vực-->
+                <div class="col-12">
+                  <div class="form-group">
+                    <select id="selectLinhVuc" class="form-control">
+                      <option value="">---Chọn Lĩnh Vực---</option>
+                      <option value="">Game</option>
+                      <option value="">Phim</option>
+                      <option value="">Sách</option>
+                      <option value="">Học tập</option>
+                      <option value="">Ứng dụng</option>
+                      <option value="">Khác</option>
+                    </select>
+                  </div>
+                </div>
+                <!-- Cột Tiêu đề-->
+                <div class="col-12">
+                  <div class="form-group">
+                    <input
+                      id="tieude"
+                      type="text"
+                      class="form-control"
+                      name="Title"
+                      placeholder="Thêm tiêu đề"
+                    />
+                  </div>
+                </div>
+                <!-- Cột Tập Tin - Hình ảnh-->
+                <div class="col-12">
+                  <div class="form-group">
+                    <input
+                      id="chontaptin"
+                      type="file"
+                      class="form-control"
+                      placeholder="Chọn tập tin..."
+                    />
+                  </div>
+                </div>
+                <!--Mô tả-->
+                <div class="col-12">
+                  <div class="form-group">
+                    <input
+                      id="mota"
+                      type="text"
+                      class="form-control"
+                      placeholder="Mô tả"
+                    />
+                  </div>
+                </div>
+                <!--Nút Gửi-->
+                <div class="col-lg-6 col-10 mx-auto">
+                  <button class="btn btn-primary w-100">Upload</button>
+                </div>
+              </form>
             </div>
-            <!-- Cột Tiêu đề-->
-            <div class="col-12">
-              <div class="form-group">
-                <input id="tieude" type="text" class="form-control" name="Title" placeholder="Thêm tiêu đề">
-              </div>
-            </div>
-            <!-- Cột Tập Tin - Hình ảnh ý tưởng sáng tạo-->
-            <div class="col-12">
-              <div class="form-group">
-                <input id="chontaptin" type="file" class="form-control" placeholder="Chọn tập tin...">
-              </div>
-            </div>
-            <!--Mô tả-->
-            <div class="col-12">
-              <div class="form-group">
-                <input id="mota" type="text" class="form-control" placeholder="Mô tả">
-              </div>
-            </div>
-            <!--Nút Đăng Ký Ý Tưởng-->
-            <div class="col-lg-6 col-10 mx-auto">
-              <button class="btn btn-primary w-100">GỬI Ý TƯỞNG</button>
-            </div>
-          </form>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-<!-- /contact -->
+    </section>
+    <!-- /contact -->
 
-<!-- footer -->
-<footer class="bg-dark footer-section">
-  <div class="section">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <h5 class="text-light">Email</h5>
-          <p class="text-white paragraph-lg font-secondary">banhanhchinhtmot@gmail.com</p>
-        </div>
-        <div class="col-md-4">
-          <h5 class="text-light">Phone</h5>
-          <p class="text-white paragraph-lg font-secondary">+84 888745255</p>
-        </div>
-        <div class="col-md-4">
-          <h5 class="text-light">Address</h5>
-          <p class="text-white paragraph-lg font-secondary">Số 19, Nguyễn Hữu Thọ, Phường Tân Phong, Quận 7</p>
+    <!-- footer -->
+    <footer class="bg-dark footer-section">
+      <div class="section">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <h5 class="text-light">Email</h5>
+              <p class="text-white paragraph-lg font-secondary">
+                leminhhoang61tk@gmail.com
+              </p>
+            </div>
+            <div class="col-md-4">
+              <h5 class="text-light">Phone</h5>
+              <p class="text-white paragraph-lg font-secondary">
+                +84 843912448
+              </p>
+            </div>
+            <div class="col-md-4">
+              <h5 class="text-light">Address</h5>
+              <p class="text-white paragraph-lg font-secondary">
+                Số 19, Nguyễn Hữu Thọ, Phường Tân Phong, Quận 7
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-  <div class="border-top text-center border-dark py-5">
-    <p class="mb-0 text-light">Copyright ©<script>
-        var CurrentYear = new Date().getFullYear()
-        document.write(CurrentYear)
-      </script><a href="https://www.facebook.com/tdtu.tmot"> hnm-ntp-TMOT</a></p>
-  </div>
-</footer>
-<!-- /footer -->
+      <div class="border-top text-center border-dark py-5">
+        <p class="mb-0 text-light">
+          Copyright ©
+          <script>
+            var CurrentYear = new Date().getFullYear();
+            document.write(CurrentYear);
+          </script>
+        </p>
+      </div>
+    </footer>
+    <!-- /footer -->
 
-<!-- jQuery -->
-<script src="plugins/jQuery/jquery.min.js"></script>
-<!-- Bootstrap JS -->
-<script src="plugins/bootstrap/bootstrap.min.js"></script>
-<!-- slick slider -->
-<script src="plugins/slick/slick.min.js"></script>
-<!-- filter -->
-<script src="plugins/shuffle/shuffle.min.js"></script>
+    <!-- jQuery -->
+    <script src="plugins/jQuery/jquery.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="plugins/bootstrap/bootstrap.min.js"></script>
+    <!-- slick slider -->
+    <script src="plugins/slick/slick.min.js"></script>
+    <!-- filter -->
+    <script src="plugins/shuffle/shuffle.min.js"></script>
 
-<!-- Main Script -->
-<script src="js/script.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-auth.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script>
-<script src="js/index.js"></script>
-</body>
+    <!-- Main Script -->
+    <script src="js/script.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script>
+    <script src="js/index.js"></script>
+  </body>
 </html>

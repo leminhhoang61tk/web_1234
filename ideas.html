@@ -1,320 +1,450 @@
 <!DOCTYPE html>
 <html lang="zxx">
+  <head>
+    <!--REGISTER IDEAS - Ý TƯỞNG-->
+    <title>TMOT | Ideas</title>
 
-<head>
-  <!--REGISTER IDEAS - Ý TƯỞNG-->
-  <title>TMOT | Ideas</title>
-  
-  <meta charset="utf-8">
-  <!-- mobile responsive meta -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  
-  <!--Font Awaresome-->
-  <link rel="stylesheet" href="plugins/fonts/fontawesome-free-5.15.2-web/css/all.min.css">
+    <meta charset="utf-8" />
+    <!-- mobile responsive meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
 
-  <!-- ** Plugins Needed for the Project ** -->
-  <!-- Bootstrap -->
-  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
-  <!-- slick slider -->
-  <link rel="stylesheet" href="plugins/slick/slick.css">
-  <!-- themefy-icon -->
-  <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
+    <!--Font Awaresome-->
+    <link
+      rel="stylesheet"
+      href="plugins/fonts/fontawesome-free-5.15.2-web/css/all.min.css"
+    />
 
-  <!-- Main Stylesheet -->
-  <link href="css/style.css" rel="stylesheet">
-  
-  <!--Favicon-->
-  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <!-- ** Plugins Needed for the Project ** -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css" />
+    <!-- slick slider -->
+    <link rel="stylesheet" href="plugins/slick/slick.css" />
+    <!-- themefy-icon -->
+    <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css" />
 
-</head>
+    <!-- Main Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
 
-<body>
-  
+    <!--Favicon-->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+  </head>
 
-<header class="navigation fixed-top">
-  <nav class="navbar navbar-expand-lg navbar-dark">
-    <a class="navbar-brand font-tertiary h3 logo" href="index.html">
-      <img src="images/logo.png" alt="tdtu" style="max-width: 200px;">
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
-      aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+  <body>
+    <header class="navigation fixed-top">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand font-tertiary h3 logo" href="index.html">
+          <img src="images/logo.png" alt="tdtu" style="max-width: 200px" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navigation"
+          aria-controls="navigation"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <div class="collapse navbar-collapse text-center" id="navigation">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="index.html">Trang chủ</a>
-        </li>
-        <li class="nav-item ">
-          <a class="nav-link" href="login.html">Đăng nhập</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="register.html">Đăng ký tài khoản</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="register-ideas.html">Đăng ký ý tưởng</a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="ideas-table.html"> Ý tưởng</a>
-        </li>
-        <li class="nav-item ">
-          <a class="nav-link" href="ideas-list.html">Thống kê ý tưởng</a>
-        </li>
-        
-        <!--TRƯỜNG HỢP ĐĂNG NHẬP-->
-        <li class="nav-item">
-          <a class="nav-link" href="#">
-            <i class="fas fa-sign-out-alt nav-link--icon"></i>
-          </a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-</header>
+        <div class="collapse navbar-collapse text-center" id="navigation">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Trang chủ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">Đăng nhập</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="register.html">Đăng ký tài khoản</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="register-ideas.html">Thuê xe</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="ideas-table.html"> Loại xe</a>
+            </li>
 
-<!-- page title -->
-<section class="page-title bg-primary position-relative">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 text-center">
-        <h1 class="text-white font-tertiary"><strong>Ý TƯỞNG</strong></h1>
+            <!--TRƯỜNG HỢP ĐĂNG NHẬP-->
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fas fa-sign-out-alt nav-link--icon"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- page title -->
+    <section class="page-title bg-primary position-relative">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h1 class="text-white font-tertiary"><strong>Ý TƯỞNG</strong></h1>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-  <!-- background shapes -->
-  <img src="images/illustrations/page-title.png" alt="illustrations" class="bg-shape-1 w-100">
-  <img src="images/illustrations/leaf-pink-round.png" alt="illustrations" class="bg-shape-2">
-  <img src="images/illustrations/dots-cyan.png" alt="illustrations" class="bg-shape-3">
-  <img src="images/illustrations/leaf-orange.png" alt="illustrations" class="bg-shape-4">
-  <img src="images/illustrations/leaf-yellow.png" alt="illustrations" class="bg-shape-5">
-  <img src="images/illustrations/dots-group-cyan.png" alt="illustrations" class="bg-shape-6">
-  <img src="images/illustrations/leaf-cyan-lg.png" alt="illustrations" class="bg-shape-7">
-</section>
-<!-- /page title -->
+      <!-- background shapes -->
+      <img
+        src="images/illustrations/page-title.png"
+        alt="illustrations"
+        class="bg-shape-1 w-100"
+      />
+      <img
+        src="images/illustrations/leaf-pink-round.png"
+        alt="illustrations"
+        class="bg-shape-2"
+      />
+      <img
+        src="images/illustrations/dots-cyan.png"
+        alt="illustrations"
+        class="bg-shape-3"
+      />
+      <img
+        src="images/illustrations/leaf-orange.png"
+        alt="illustrations"
+        class="bg-shape-4"
+      />
+      <img
+        src="images/illustrations/leaf-yellow.png"
+        alt="illustrations"
+        class="bg-shape-5"
+      />
+      <img
+        src="images/illustrations/dots-group-cyan.png"
+        alt="illustrations"
+        class="bg-shape-6"
+      />
+      <img
+        src="images/illustrations/leaf-cyan-lg.png"
+        alt="illustrations"
+        class="bg-shape-7"
+      />
+    </section>
+    <!-- /page title -->
 
-<!-- portfolio -->
-<section class="section">
-  <div class="container">
-    <div class="row mb-5">
-      <div class="col-12">
-      </div>
-    </div>
-    <div class="row shuffle-wrapper">
-      <div class="col-lg-4 col-6 mb-4 shuffle-item">
-        <div class="position-relative rounded hover-wrapper">
-          <img src="images/ideas/item-1.png" alt="ideas-image" class="img-fluid rounded w-100 d-block">
-          <div class="hover-overlay">
-            <div class="hover-content">
-              <!--THAY ĐỔI LINK CHI TIẾT Ở ĐÂY-->
-              <a class="btn btn-light btn-sm" href="ideas-detail-mt.html">Chủ đề môi trường</a>
+    <!-- portfolio -->
+    <section class="section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-12"></div>
+        </div>
+        <div class="row shuffle-wrapper">
+          <div class="col-lg-4 col-6 mb-4 shuffle-item">
+            <div class="position-relative rounded hover-wrapper">
+              <img
+                src="images/ideas/item-1.png"
+                alt="ideas-image"
+                class="img-fluid rounded w-100 d-block"
+              />
+              <div class="hover-overlay">
+                <div class="hover-content">
+                  <!--THAY ĐỔI LINK CHI TIẾT Ở ĐÂY-->
+                  <a class="btn btn-light btn-sm" href="ideas-detail-mt.html"
+                    >Chủ đề môi trường</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-6 mb-4 shuffle-item">
+            <div class="position-relative rounded hover-wrapper">
+              <img
+                src="images/ideas/item-2.png"
+                alt="ideas-image"
+                class="img-fluid rounded w-100 d-block"
+              />
+              <div class="hover-overlay">
+                <div class="hover-content">
+                  <a class="btn btn-light btn-sm" href="ideas-detail-dl-gt.html"
+                    >Chủ đề Du lịch - Giải trí</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-6 mb-4 shuffle-item">
+            <div class="position-relative rounded hover-wrapper">
+              <img
+                src="images/ideas/item-3.png"
+                alt="ideas-image"
+                class="img-fluid rounded w-100 d-block"
+              />
+              <div class="hover-overlay">
+                <div class="hover-content">
+                  <a class="btn btn-light btn-sm" href="ideas-detail-cntt.html"
+                    >Chủ đề Công nghệ thông tin</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-6 mb-4 shuffle-item">
+            <div class="position-relative rounded hover-wrapper">
+              <img
+                src="images/ideas/item-6.png"
+                alt="ideas-image"
+                class="img-fluid rounded w-100 d-block"
+              />
+              <div class="hover-overlay">
+                <div class="hover-content">
+                  <a class="btn btn-light btn-sm" href="ideas-detail-cttt.html"
+                    >Chủ đề Công tác tuyên truyền</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-6 mb-4 shuffle-item">
+            <div class="position-relative rounded hover-wrapper">
+              <img
+                src="images/ideas/item-8.png"
+                alt="ideas-image"
+                class="img-fluid rounded w-100 d-block"
+              />
+              <div class="hover-overlay">
+                <div class="hover-content">
+                  <a class="btn btn-light btn-sm" href="ideas-detail-at.html"
+                    >Chủ đề Ẩm thực</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-6 mb-4 shuffle-item">
+            <div class="position-relative rounded hover-wrapper">
+              <img
+                src="images/ideas/item-5.png"
+                alt="ideas-image"
+                class="img-fluid rounded w-100 d-block"
+              />
+              <div class="hover-overlay">
+                <div class="hover-content">
+                  <a class="btn btn-light btn-sm" href="ideas-detail-gtvt.html"
+                    >Chủ đề Giao thông vận tải</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-6 mb-4 shuffle-item">
+            <div class="position-relative rounded hover-wrapper">
+              <img
+                src="images/ideas/item-1.png"
+                alt="ideas-image"
+                class="img-fluid rounded w-100 d-block"
+              />
+              <div class="hover-overlay">
+                <div class="hover-content">
+                  <a class="btn btn-light btn-sm" href="ideas-detail-nlnn.html"
+                    >Chủ đề Nông - Lâm - Ngư nghiệp</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-6 mb-4 shuffle-item">
+            <div class="position-relative rounded hover-wrapper">
+              <img
+                src="images/ideas/item-3.png"
+                alt="ideas-image"
+                class="img-fluid rounded w-100 d-block"
+              />
+              <div class="hover-overlay">
+                <div class="hover-content">
+                  <a class="btn btn-light btn-sm" href="ideas-detail-tk.html"
+                    >Chủ đề Tiết kiệm</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-6 mb-4 shuffle-item illustration">
+            <div class="position-relative rounded hover-wrapper">
+              <img
+                src="images/ideas/item-7.png"
+                alt="portfolio-image"
+                class="img-fluid rounded w-100 d-block"
+              />
+              <div class="hover-overlay">
+                <div class="hover-content">
+                  <a class="btn btn-light btn-sm" href="ideas-detail-vh-nt.html"
+                    >Chủ đề Văn hóa - Nghệ thuật</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-6 mb-4 shuffle-item illustration">
+            <div class="position-relative rounded hover-wrapper">
+              <img
+                src="images/ideas/item-9.png"
+                alt="portfolio-image"
+                class="img-fluid rounded w-100 d-block"
+              />
+              <div class="hover-overlay">
+                <div class="hover-content">
+                  <a class="btn btn-light btn-sm" href="ideas-detail-gd-dt.html"
+                    >Chủ đề Giáo dục - Đào tạo</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-6 mb-4 shuffle-item illustration">
+            <div class="position-relative rounded hover-wrapper">
+              <img
+                src="images/ideas/item-10.png"
+                alt="portfolio-image"
+                class="img-fluid rounded w-100 d-block"
+              />
+              <div class="hover-overlay">
+                <div class="hover-content">
+                  <a class="btn btn-light btn-sm" href="ideas-detail-kd.html"
+                    >Chủ đề Kinh doanh</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-6 mb-4 shuffle-item illustration">
+            <div class="position-relative rounded hover-wrapper">
+              <img
+                src="images/ideas/item-11.png"
+                alt="portfolio-image"
+                class="img-fluid rounded w-100 d-block"
+              />
+              <div class="hover-overlay">
+                <div class="hover-content">
+                  <a class="btn btn-light btn-sm" href="ideas-detail-tt-mn.html"
+                    >Chủ đề Thời trang - Mỹ nghệ</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-6 mb-4 shuffle-item illustration">
+            <div class="position-relative rounded hover-wrapper">
+              <img
+                src="images/ideas/item-12.png"
+                alt="portfolio-image"
+                class="img-fluid rounded w-100 d-block"
+              />
+              <div class="hover-overlay">
+                <div class="hover-content">
+                  <a class="btn btn-light btn-sm" href="ideas-detail-d-dt.html"
+                    >Chủ đề Điện - Điện tử</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-6 mb-4 shuffle-item illustration">
+            <div class="position-relative rounded hover-wrapper">
+              <img
+                src="images/ideas/item-13.png"
+                alt="portfolio-image"
+                class="img-fluid rounded w-100 d-block"
+              />
+              <div class="hover-overlay">
+                <div class="hover-content">
+                  <a class="btn btn-light btn-sm" href="ideas-detail-khac.html"
+                    >Chủ đề khác</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-6 mb-4 shuffle-item illustration">
+            <div class="position-relative rounded hover-wrapper">
+              <img
+                src="images/ideas/item-14.png"
+                alt="portfolio-image"
+                class="img-fluid rounded w-100 d-block"
+              />
+              <div class="hover-overlay">
+                <div class="hover-content">
+                  <a class="btn btn-light btn-sm" href="ideas-detail-yt.html"
+                    >Chủ đề Y tế</a
+                  >
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
+    </section>
+    <!-- /portfolio -->
 
-      <div class="col-lg-4 col-6 mb-4 shuffle-item">
-        <div class="position-relative rounded hover-wrapper">
-          <img src="images/ideas/item-2.png" alt="ideas-image" class="img-fluid rounded w-100 d-block">
-          <div class="hover-overlay">
-            <div class="hover-content">
-              <a class="btn btn-light btn-sm" href="ideas-detail-dl-gt.html">Chủ đề Du lịch - Giải trí</a>
+    <!-- footer -->
+    <footer class="bg-dark footer-section">
+      <div class="section">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <h5 class="text-light">Email</h5>
+              <p class="text-white paragraph-lg font-secondary">
+                banhanhchinhtmot@gmail.com
+              </p>
+            </div>
+            <div class="col-md-4">
+              <h5 class="text-light">Phone</h5>
+              <p class="text-white paragraph-lg font-secondary">
+                +84 888745255
+              </p>
+            </div>
+            <div class="col-md-4">
+              <h5 class="text-light">Address</h5>
+              <p class="text-white paragraph-lg font-secondary">
+                Số 19, Nguyễn Hữu Thọ, Phường Tân Phong, Quận 7
+              </p>
             </div>
           </div>
         </div>
       </div>
-
-      <div class="col-lg-4 col-6 mb-4 shuffle-item">
-        <div class="position-relative rounded hover-wrapper">
-          <img src="images/ideas/item-3.png" alt="ideas-image" class="img-fluid rounded w-100 d-block">
-          <div class="hover-overlay">
-            <div class="hover-content">
-              <a class="btn btn-light btn-sm" href="ideas-detail-cntt.html">Chủ đề Công nghệ thông tin</a>
-            </div>
-          </div>
-        </div>
+      <div class="border-top text-center border-dark py-5">
+        <p class="mb-0 text-light">
+          Copyright ©
+          <script>
+            var CurrentYear = new Date().getFullYear();
+            document.write(CurrentYear);
+          </script>
+          <a href="https://www.facebook.com/tdtu.tmot"> hnm-ntp-TMOT</a>
+        </p>
       </div>
+    </footer>
+    <!-- /footer -->
 
-      <div class="col-lg-4 col-6 mb-4 shuffle-item">
-        <div class="position-relative rounded hover-wrapper">
-          <img src="images/ideas/item-6.png" alt="ideas-image" class="img-fluid rounded w-100 d-block">
-          <div class="hover-overlay">
-            <div class="hover-content">
-              <a class="btn btn-light btn-sm" href="ideas-detail-cttt.html">Chủ đề Công tác tuyên truyền</a>
-            </div>
-          </div>
-        </div>
-      </div>
+    <!-- jQuery -->
+    <script src="plugins/jQuery/jquery.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="plugins/bootstrap/bootstrap.min.js"></script>
+    <!-- slick slider -->
+    <script src="plugins/slick/slick.min.js"></script>
+    <!-- filter -->
+    <script src="plugins/shuffle/shuffle.min.js"></script>
 
-      <div class="col-lg-4 col-6 mb-4 shuffle-item">
-        <div class="position-relative rounded hover-wrapper">
-          <img src="images/ideas/item-8.png" alt="ideas-image" class="img-fluid rounded w-100 d-block">
-          <div class="hover-overlay">
-            <div class="hover-content">
-              <a class="btn btn-light btn-sm" href="ideas-detail-at.html">Chủ đề Ẩm thực</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-6 mb-4 shuffle-item">
-        <div class="position-relative rounded hover-wrapper">
-          <img src="images/ideas/item-5.png" alt="ideas-image" class="img-fluid rounded w-100 d-block">
-          <div class="hover-overlay">
-            <div class="hover-content">
-              <a class="btn btn-light btn-sm" href="ideas-detail-gtvt.html">Chủ đề Giao thông vận tải</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-6 mb-4 shuffle-item">
-        <div class="position-relative rounded hover-wrapper">
-          <img src="images/ideas/item-1.png" alt="ideas-image" class="img-fluid rounded w-100 d-block">
-          <div class="hover-overlay">
-            <div class="hover-content">
-              <a class="btn btn-light btn-sm" href="ideas-detail-nlnn.html">Chủ đề Nông - Lâm - Ngư nghiệp</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <div class="col-lg-4 col-6 mb-4 shuffle-item">
-        <div class="position-relative rounded hover-wrapper">
-          <img src="images/ideas/item-3.png" alt="ideas-image" class="img-fluid rounded w-100 d-block">
-          <div class="hover-overlay">
-            <div class="hover-content">
-              <a class="btn btn-light btn-sm" href="ideas-detail-tk.html">Chủ đề Tiết kiệm</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-6 mb-4 shuffle-item illustration">
-        <div class="position-relative rounded hover-wrapper">
-          <img src="images/ideas/item-7.png" alt="portfolio-image" class="img-fluid rounded w-100 d-block">
-          <div class="hover-overlay">
-            <div class="hover-content">
-              <a class="btn btn-light btn-sm" href="ideas-detail-vh-nt.html">Chủ đề Văn hóa - Nghệ thuật</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-6 mb-4 shuffle-item illustration">
-        <div class="position-relative rounded hover-wrapper">
-          <img src="images/ideas/item-9.png" alt="portfolio-image" class="img-fluid rounded w-100 d-block">
-          <div class="hover-overlay">
-            <div class="hover-content">
-              <a class="btn btn-light btn-sm" href="ideas-detail-gd-dt.html">Chủ đề Giáo dục - Đào tạo</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-6 mb-4 shuffle-item illustration">
-        <div class="position-relative rounded hover-wrapper">
-          <img src="images/ideas/item-10.png" alt="portfolio-image" class="img-fluid rounded w-100 d-block">
-          <div class="hover-overlay">
-            <div class="hover-content">
-              <a class="btn btn-light btn-sm" href="ideas-detail-kd.html">Chủ đề Kinh doanh</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-6 mb-4 shuffle-item illustration">
-        <div class="position-relative rounded hover-wrapper">
-          <img src="images/ideas/item-11.png" alt="portfolio-image" class="img-fluid rounded w-100 d-block">
-          <div class="hover-overlay">
-            <div class="hover-content">
-              <a class="btn btn-light btn-sm" href="ideas-detail-tt-mn.html">Chủ đề Thời trang - Mỹ nghệ</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-6 mb-4 shuffle-item illustration">
-        <div class="position-relative rounded hover-wrapper">
-          <img src="images/ideas/item-12.png" alt="portfolio-image" class="img-fluid rounded w-100 d-block">
-          <div class="hover-overlay">
-            <div class="hover-content">
-              <a class="btn btn-light btn-sm" href="ideas-detail-d-dt.html">Chủ đề Điện - Điện tử</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-6 mb-4 shuffle-item illustration">
-        <div class="position-relative rounded hover-wrapper">
-          <img src="images/ideas/item-13.png" alt="portfolio-image" class="img-fluid rounded w-100 d-block">
-          <div class="hover-overlay">
-            <div class="hover-content">
-              <a class="btn btn-light btn-sm" href="ideas-detail-khac.html">Chủ đề khác</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-6 mb-4 shuffle-item illustration">
-        <div class="position-relative rounded hover-wrapper">
-          <img src="images/ideas/item-14.png" alt="portfolio-image" class="img-fluid rounded w-100 d-block">
-          <div class="hover-overlay">
-            <div class="hover-content">
-              <a class="btn btn-light btn-sm" href="ideas-detail-yt.html">Chủ đề Y tế</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-    </div>
-  </div>
-</section>
-<!-- /portfolio -->
-
-<!-- footer -->
-<footer class="bg-dark footer-section">
-  <div class="section">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <h5 class="text-light">Email</h5>
-          <p class="text-white paragraph-lg font-secondary">banhanhchinhtmot@gmail.com</p>
-        </div>
-        <div class="col-md-4">
-          <h5 class="text-light">Phone</h5>
-          <p class="text-white paragraph-lg font-secondary">+84 888745255</p>
-        </div>
-        <div class="col-md-4">
-          <h5 class="text-light">Address</h5>
-          <p class="text-white paragraph-lg font-secondary">Số 19, Nguyễn Hữu Thọ, Phường Tân Phong, Quận 7</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="border-top text-center border-dark py-5">
-    <p class="mb-0 text-light">Copyright ©<script>
-        var CurrentYear = new Date().getFullYear()
-        document.write(CurrentYear)
-      </script><a href="https://www.facebook.com/tdtu.tmot"> hnm-ntp-TMOT</a></p>
-  </div>
-</footer>
-<!-- /footer -->
-
-<!-- jQuery -->
-<script src="plugins/jQuery/jquery.min.js"></script>
-<!-- Bootstrap JS -->
-<script src="plugins/bootstrap/bootstrap.min.js"></script>
-<!-- slick slider -->
-<script src="plugins/slick/slick.min.js"></script>
-<!-- filter -->
-<script src="plugins/shuffle/shuffle.min.js"></script>
-
-<!-- Main Script -->
-<script src="js/script.js"></script>
-
-</body>
+    <!-- Main Script -->
+    <script src="js/script.js"></script>
+  </body>
 </html>
